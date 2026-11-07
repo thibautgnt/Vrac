@@ -98,6 +98,8 @@ let package = Package(
                 "Services/DiskMapColorBranchContext.swift",
                 "Services/SunburstGeometry.swift",
                 "Services/DiscardPileVisualizationOverlay.swift",
+                "Services/Duplicates/DuplicateFinder.swift",
+                "Services/Duplicates/DuplicateSelection.swift",
                 "Services/ChartViewportTransform.swift",
                 "Services/ChartViewportMotion.swift",
                 "Services/ChartScrollInput.swift",
