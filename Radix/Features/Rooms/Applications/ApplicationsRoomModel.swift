@@ -191,7 +191,7 @@ final class ApplicationsRoomModel: ObservableObject {
 
     /// Samples CPU and memory of the app every 2 seconds while the caller's task lives.
     func monitor(_ app: InstalledApp) async {
-        var previous: ProcessSample?
+        var previous: AppProcessSample?
         usage = nil
         while !Task.isCancelled {
             if let running = runningApplication(for: app), let sample = ProcessUsage.sample(pid: running.processIdentifier) {
