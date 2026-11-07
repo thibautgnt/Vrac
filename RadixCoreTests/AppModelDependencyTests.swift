@@ -1064,7 +1064,7 @@ struct AppModelDependencyTests {
         #expect(model.errorAlertTitle == "Package Contents Hidden")
         #expect(
             model.lastErrorMessage
-                == "Radix scanned this package as a single item. To zoom into it, turn on “Expand packages” in Settings, then rescan this location."
+                == "Vrac scanned this package as a single item. To zoom into it, turn on “Expand packages” in Settings, then rescan this location."
         )
         #expect(model.navigation.currentFocusNode?.id == root.id)
     }
@@ -1429,7 +1429,7 @@ struct AppModelDependencyTests {
         ),
         (
             .missingScannedIdentity,
-            "Radix could not verify the scanned identity for /selection/file.txt. Rescan before moving it to Trash."
+            "Vrac could not verify the scanned identity for /selection/file.txt. Rescan before moving it to Trash."
         ),
     ])
     func testConfirmPendingTrashPreservesNodeAfterIdentityRejection(
@@ -2474,7 +2474,7 @@ struct AppModelDependencyTests {
 
         model.prepareAndOpenFullDiskAccessSettings()
 
-        #expect(model.lastErrorMessage == "Radix could not open Full Disk Access settings.")
+        #expect(model.lastErrorMessage == "Vrac could not open Full Disk Access settings.")
     }
 
     @Test

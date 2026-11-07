@@ -360,7 +360,7 @@ struct SystemIntegrationTests {
             }
 
             #expect(path == "/System")
-            #expect(error.localizedDescription == "Radix will not move the protected location at /System to the Trash.")
+            #expect(error.localizedDescription == "Vrac will not move the protected location at /System to the Trash.")
             return true
         }
     }
