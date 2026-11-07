@@ -12,7 +12,7 @@ enum VracDebugSnapshot {
     @MainActor
     static func scheduleIfRequested() {
         guard let path = UserDefaults.standard.string(forKey: "VracSnapshot") else { return }
-        let delay = UserDefaults.standard.object(forKey: "VracSnapshotDelay") as? Double ?? 5
+        let delay = UserDefaults.standard.double(forKey: "VracSnapshotDelay").nonZero ?? 5
         DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
             guard let window = NSApp.windows.first(where: { $0.isVisible && $0.contentView != nil }),
                   let view = window.contentView?.superview ?? window.contentView,
@@ -25,5 +25,11 @@ enum VracDebugSnapshot {
             NSApp.terminate(nil)
         }
     }
+}
+#endif
+
+#if DEBUG
+private extension Double {
+    var nonZero: Double? { self == 0 ? nil : self }
 }
 #endif
