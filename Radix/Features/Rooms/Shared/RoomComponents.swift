@@ -131,7 +131,7 @@ struct StorageSegmentBar: View {
                     ForEach(visibleSegments) { segment in
                         Rectangle()
                             .fill(segment.color.gradient)
-                            .frame(width: max(3, proxy.size.width * fraction(segment)))
+                            .frame(width: max(3, (proxy.size.width - CGFloat(max(visibleSegments.count - 1, 0)) * 2) * fraction(segment)))
                             .help(Text(verbatim: "\(segment.label) · \(RadixFormatters.size(segment.bytes))"))
                     }
                     Spacer(minLength: 0)
@@ -260,6 +260,7 @@ struct RoomFileRow: View {
     let url: URL
     let bytes: Int64
     var detail: String?
+    var title: String?
 
     var body: some View {
         HStack(spacing: 10) {
@@ -268,7 +269,7 @@ struct RoomFileRow: View {
                 .frame(width: 22, height: 22)
                 .accessibilityHidden(true)
             VStack(alignment: .leading, spacing: 1) {
-                Text(url.lastPathComponent)
+                Text(title ?? url.lastPathComponent)
                     .lineLimit(1)
                     .truncationMode(.middle)
                 Text(detail ?? (url.deletingLastPathComponent().path as NSString).abbreviatingWithTildeInPath)

@@ -1,0 +1,418 @@
+{
+  "sourceLanguage": "en",
+  "strings": {
+    "%@ moved to the Trash": {
+      "extractionState": "manual",
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ placés dans la Corbeille"
+          }
+        }
+      }
+    },
+    "%@ · modified %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@ · modifié %2$@"
+          }
+        }
+      }
+    },
+    "%lld items could not be moved": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld item could not be moved"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld items could not be moved"
+                }
+              }
+            }
+          }
+        },
+        "fr": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld élément n'a pas pu être déplacé"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld éléments n'ont pas pu être déplacés"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "%lld locations could not be read. Allow Full Disk Access to include them.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld location could not be read. Allow Full Disk Access to include it."
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld locations could not be read. Allow Full Disk Access to include them."
+                }
+              }
+            }
+          }
+        },
+        "fr": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld emplacement n'a pas pu être lu. Autorisez l'accès complet au disque pour l'inclure."
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld emplacements n'ont pas pu être lus. Autorisez l'accès complet au disque pour les inclure."
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "%lld of %lld selected": {
+      "extractionState": "manual",
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$lld sur %2$lld sélectionnés"
+          }
+        }
+      }
+    },
+    "App caches": {
+      "extractionState": "manual",
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Caches des apps"
+          }
+        }
+      }
+    },
+    "App is open, quit it to clear this cache": {
+      "extractionState": "manual",
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "App ouverte : quittez-la pour vider ce cache"
+          }
+        }
+      }
+    },
+    "Caches, logs, build files, installers and old downloads.": {
+      "extractionState": "manual",
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Caches, journaux, fichiers de compilation, installeurs et anciens téléchargements."
+          }
+        }
+      }
+    },
+    "Copies of attachments opened from Mail. They stay available in your messages.": {
+      "extractionState": "manual",
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copies des pièces jointes ouvertes depuis Mail. Elles restent disponibles dans vos messages."
+          }
+        }
+      }
+    },
+    "Developer files": {
+      "extractionState": "manual",
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fichiers de développement"
+          }
+        }
+      }
+    },
+    "Disk images and install packages in Downloads and on the Desktop. Those older than a week are selected.": {
+      "extractionState": "manual",
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Images disque et paquets d'installation dans Téléchargements et sur le Bureau. Ceux de plus d'une semaine sont cochés."
+          }
+        }
+      }
+    },
+    "Dismiss": {
+      "extractionState": "manual",
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fermer"
+          }
+        }
+      }
+    },
+    "Empty the Trash to get the space back.": {
+      "extractionState": "manual",
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Videz la Corbeille pour récupérer l'espace."
+          }
+        }
+      }
+    },
+    "Everything goes to the Trash, nothing is deleted for good.": {
+      "extractionState": "manual",
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tout passe par la Corbeille, rien n'est supprimé définitivement."
+          }
+        }
+      }
+    },
+    "Files in Downloads untouched for more than 90 days. Check them before removing anything.": {
+      "extractionState": "manual",
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fichiers de Téléchargements inchangés depuis plus de 90 jours. Vérifiez-les avant toute suppression."
+          }
+        }
+      }
+    },
+    "Hide items": {
+      "extractionState": "manual",
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Masquer les éléments"
+          }
+        }
+      }
+    },
+    "Installers": {
+      "extractionState": "manual",
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Installeurs"
+          }
+        }
+      }
+    },
+    "Logs and crash reports": {
+      "extractionState": "manual",
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Journaux et rapports de plantage"
+          }
+        }
+      }
+    },
+    "Looking for space you can safely reclaim": {
+      "extractionState": "manual",
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recherche de l'espace récupérable sans risque"
+          }
+        }
+      }
+    },
+    "Mail attachments": {
+      "extractionState": "manual",
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pièces jointes de Mail"
+          }
+        }
+      }
+    },
+    "No caches, logs or leftovers worth removing were found.": {
+      "extractionState": "manual",
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aucun cache, journal ou fichier superflu à supprimer n'a été trouvé."
+          }
+        }
+      }
+    },
+    "Nothing to clean up": {
+      "extractionState": "manual",
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rien à nettoyer"
+          }
+        }
+      }
+    },
+    "Old downloads": {
+      "extractionState": "manual",
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anciens téléchargements"
+          }
+        }
+      }
+    },
+    "Open Settings": {
+      "extractionState": "manual",
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ouvrir les Réglages"
+          }
+        }
+      }
+    },
+    "Rescan": {
+      "extractionState": "manual",
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Analyser à nouveau"
+          }
+        }
+      }
+    },
+    "Show items": {
+      "extractionState": "manual",
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Afficher les éléments"
+          }
+        }
+      }
+    },
+    "Still looking, more items may appear": {
+      "extractionState": "manual",
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recherche en cours, d'autres éléments peuvent apparaître"
+          }
+        }
+      }
+    },
+    "Technical history of apps and macOS, mostly useful for troubleshooting.": {
+      "extractionState": "manual",
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Historique technique des apps et de macOS, utile surtout pour le dépannage."
+          }
+        }
+      }
+    },
+    "Temporary files that apps rebuild on their own when needed.": {
+      "extractionState": "manual",
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fichiers temporaires que les apps recréent d'elles-mêmes au besoin."
+          }
+        }
+      }
+    },
+    "Xcode build data, package manager caches and dependencies of idle projects. Archives and idle projects are left unselected.": {
+      "extractionState": "manual",
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Données de compilation Xcode, caches des gestionnaires de paquets et dépendances des projets inactifs. Les archives et les projets inactifs restent décochés."
+          }
+        }
+      }
+    },
+    "can be freed": {
+      "extractionState": "manual",
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "peuvent être libérés"
+          }
+        }
+      }
+    },
+    "selected": {
+      "extractionState": "manual",
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "sélectionnés"
+          }
+        }
+      }
+    }
+  },
+  "version": "1.1"
+}
