@@ -1,9 +1,46 @@
 # AGENTS.md
 
-## Radix
+## Vrac
 
-Radix is a native macOS 14+ disk-space analyzer built with Swift 6.2,
-SwiftUI, and Xcode 26+.
+Vrac is a personal, renamed fork of Radix (MIT, upstream remote `upstream`):
+a native macOS 14+ disk-space analyzer and cleaner built with Swift 6.2,
+SwiftUI, and Xcode 26+. Types, files, the Xcode project and the scheme keep
+the Radix name so upstream can still be merged; only what the user sees says
+Vrac. The UI language that matters is French.
+
+## Vrac rooms
+
+Besides the Radix disk-map workspace, the sidebar "Outils" section opens
+rooms (`Radix/Features/Rooms/`): Overview, Cleanup, Duplicates, Applications,
+Compress, Monitor.
+
+- One folder per room: `Radix/Features/Rooms/<Room>/`, entry view
+  `<Room>RoomView` (no init parameters). Build pages with the shared pieces in
+  `Rooms/Shared/RoomComponents.swift`: `RoomPage`, `RoomCard`, `RoomStat`,
+  `StorageSegmentBar`, `TrashSelectionBar`, `RoomEmptyState`, `RoomFileRow`.
+- Navigation from a room: `@Environment(\.vracNavigator)` gives
+  `explore(URL)` (open the disk map on a folder) and `openRoom(VracRoom)`.
+- Room state must survive switching rooms: keep it in a `@MainActor final class
+  <Room>RoomModel: ObservableObject` with `static let shared`, observed by the view.
+- Non-UI logic (scanners, rules, parsers) goes in `Radix/Services/<Room>/`,
+  is `nonisolated` where it runs off the main actor, is listed in
+  `Package.swift` and gets Swift Testing tests in `RadixCoreTests/`.
+- Deleting: never remove files directly. Selection, then `TrashSelectionBar`
+  (confirmation), then `RoomTrash.moveToTrash` off the main actor. Never touch
+  anything inside a package such as a Photos library, and never select by
+  default anything whose loss the user would regret.
+- Strings: English key, French translation, one catalog per room,
+  `Radix/Features/Rooms/<Room>/<Room>.xcstrings`, used with
+  `Text("Key", tableName: "<Room>")` or `String(localized: "Key", table: "<Room>")`.
+  Add entries with `tools/room_strings.py` (supports plurals).
+  For text that must not be translated use `Text(verbatim:)`.
+  `LocalizationCatalogTests` enforces this.
+- Visual check without Screen Recording rights: `tools/snap.sh <room> out.png
+  [delay] [derived-data]` launches the Debug build on that room and writes a
+  PNG of the window (the translucent sidebar comes out blank, that is expected).
+- Visual language: native macOS, quiet. What is kept is drawn in gray tones,
+  what can be reclaimed in color. Room tint from `VracRoom.tint`.
+  No emoji in the interface.
 
 ## Architecture and task routing
 

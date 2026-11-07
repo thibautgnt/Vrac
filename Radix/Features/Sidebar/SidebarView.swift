@@ -11,6 +11,7 @@ struct SidebarActions {
 struct SidebarView: View {
     @Environment(\.isReadOnlyMode) private var isReadOnlyMode
     @ObservedObject var model: SidebarModel
+    @Binding var selectedRoom: VracRoom?
     @ObservedObject var scanState: ScanCoordinator
     let discardPileSummary: DiscardPileSummary
     let discardPileDragIsActive: Bool
@@ -20,10 +21,15 @@ struct SidebarView: View {
 
     private var selection: Binding<String?> {
         Binding(
-            get: { model.activeTargetID },
+            get: { selectedRoom?.sidebarTag ?? model.activeTargetID },
             set: { newValue in
-                guard let newValue,
-                      newValue != model.activeTargetID else { return }
+                guard let newValue else { return }
+                if let room = VracRoom(sidebarTag: newValue) {
+                    selectedRoom = room
+                    return
+                }
+                selectedRoom = nil
+                guard newValue != model.activeTargetID else { return }
                 actions.selectTargetAfterViewUpdate(newValue)
             }
         )
@@ -32,6 +38,17 @@ struct SidebarView: View {
     var body: some View {
         VStack(spacing: 0) {
             List(selection: selection) {
+                Section(String(localized: "Tools", table: "Rooms")) {
+                    ForEach(VracRoom.allCases) { room in
+                        Label {
+                            Text(room.title)
+                        } icon: {
+                            RoomIcon(room: room, size: 20)
+                        }
+                        .tag(room.sidebarTag)
+                    }
+                }
+
                 if !model.smartTargetRows.isEmpty {
                     Section("Smart Locations") {
                         ForEach(model.smartTargetRows) { row in

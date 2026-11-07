@@ -284,10 +284,19 @@ struct LocalizationCatalogTests {
 
     private func appLocalizationCatalogs() throws -> [String: [String: Any]] {
         let radixRoot = repositoryRoot.appendingPathComponent("Radix")
-        return [
+        var catalogs = [
             "Localizable": try localizationCatalog(at: radixRoot.appendingPathComponent("Localizable.xcstrings")),
             "Interface": try localizationCatalog(at: radixRoot.appendingPathComponent("Interface.xcstrings")),
         ]
+        // Each Vrac room keeps its own table so rooms never share a catalog file.
+        let roomsRoot = radixRoot.appendingPathComponent("Features/Rooms")
+        let roomCatalogs = FileManager.default.enumerator(at: roomsRoot, includingPropertiesForKeys: nil)?
+            .compactMap { $0 as? URL }
+            .filter { $0.pathExtension == "xcstrings" } ?? []
+        for url in roomCatalogs {
+            catalogs[url.deletingPathExtension().lastPathComponent] = try localizationCatalog(at: url)
+        }
+        return catalogs
     }
 
     private func swiftSourceFiles(in directory: URL) throws -> [URL] {

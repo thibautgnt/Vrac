@@ -1,0 +1,264 @@
+{
+  "sourceLanguage": "en",
+  "strings": {
+    "%lld items selected": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld item selected"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld items selected"
+                }
+              }
+            }
+          }
+        },
+        "fr": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld élément sélectionné"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld éléments sélectionnés"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Applications": {
+      "extractionState": "manual",
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Applications"
+          }
+        }
+      }
+    },
+    "Apps, their data and startup items": {
+      "extractionState": "manual",
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les apps, leurs données et le démarrage"
+          }
+        }
+      }
+    },
+    "CPU, memory, ports and battery in real time": {
+      "extractionState": "manual",
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Processeur, mémoire, ports et batterie en direct"
+          }
+        }
+      }
+    },
+    "Caches, logs, build files and leftovers": {
+      "extractionState": "manual",
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Caches, journaux, fichiers de build et restes"
+          }
+        }
+      }
+    },
+    "Cleanup": {
+      "extractionState": "manual",
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nettoyage"
+          }
+        }
+      }
+    },
+    "Compress": {
+      "extractionState": "manual",
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Compression"
+          }
+        }
+      }
+    },
+    "Duplicates": {
+      "extractionState": "manual",
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Doublons"
+          }
+        }
+      }
+    },
+    "Identical files, compared byte for byte": {
+      "extractionState": "manual",
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fichiers identiques, comparés octet par octet"
+          }
+        }
+      }
+    },
+    "Monitor": {
+      "extractionState": "manual",
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Moniteur"
+          }
+        }
+      }
+    },
+    "Move %lld items to the Trash?": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Move %lld item to the Trash?"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Move %lld items to the Trash?"
+                }
+              }
+            }
+          }
+        },
+        "fr": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Placer %lld élément dans la Corbeille ?"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Placer %lld éléments dans la Corbeille ?"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Move to Trash": {
+      "extractionState": "manual",
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Placer dans la Corbeille"
+          }
+        }
+      }
+    },
+    "Overview": {
+      "extractionState": "manual",
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vue d’ensemble"
+          }
+        }
+      }
+    },
+    "Reveal in Finder": {
+      "extractionState": "manual",
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Afficher dans le Finder"
+          }
+        }
+      }
+    },
+    "Shrink videos and photos instead of deleting them": {
+      "extractionState": "manual",
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Allégez vidéos et photos plutôt que de les supprimer"
+          }
+        }
+      }
+    },
+    "Tools": {
+      "extractionState": "manual",
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Outils"
+          }
+        }
+      }
+    },
+    "You can put them back from the Trash until it is emptied.": {
+      "extractionState": "manual",
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vous pourrez les remettre en place depuis la Corbeille tant qu’elle n’est pas vidée."
+          }
+        }
+      }
+    },
+    "Your disk at a glance": {
+      "extractionState": "manual",
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Votre disque d’un coup d’œil"
+          }
+        }
+      }
+    }
+  },
+  "version": "1.1"
+}

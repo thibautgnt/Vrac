@@ -101,6 +101,7 @@ let package = Package(
                 "Services/ChartViewportTransform.swift",
                 "Services/ChartViewportMotion.swift",
                 "Services/ChartScrollInput.swift",
+                "Services/RoomTrash.swift",
                 "Services/SystemIntegration.swift",
                 "Services/TreemapChartModel.swift",
                 "Services/TreemapColorResolver.swift",

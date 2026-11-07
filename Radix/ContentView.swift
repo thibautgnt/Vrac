@@ -7,6 +7,7 @@ struct ContentView: View {
     @Environment(\.scenePhase) private var scenePhase
 
     @State private var splitViewVisibility: NavigationSplitViewVisibility = .all
+    @State private var selectedRoom: VracRoom? = .overview
     @State private var showsInspector = false
     @State private var prefersInspectorPresented = true
     @State private var inspectorPreferenceBeforeTour: Bool?
@@ -23,6 +24,7 @@ struct ContentView: View {
         NavigationSplitView(columnVisibility: workspaceColumnVisibility) {
             SidebarView(
                 model: appModel.sidebar,
+                selectedRoom: $selectedRoom,
                 scanState: appModel.scanState,
                 discardPileSummary: discardPileSnapshot.summary,
                 discardPileDragIsActive: discardPileDragIsActive,
@@ -30,6 +32,10 @@ struct ContentView: View {
             )
                 .navigationSplitViewColumnWidth(min: 230, ideal: 260, max: 320)
         } detail: {
+            if let selectedRoom {
+                RoomDetailView(room: selectedRoom)
+                    .environment(\.vracNavigator, VracNavigator(explore: explore, openRoom: { self.selectedRoom = $0 }))
+            } else {
             WorkspaceDetailView(
                 scanState: appModel.scanState,
                 navigation: appModel.navigation,
@@ -60,6 +66,16 @@ struct ContentView: View {
             .overlay(alignment: .topTrailing) {
                 WorkspaceTourCard(tour: appModel.workspaceTour, presentation: tourPresentation)
             }
+            }
+        }
+        .onAppear {
+            #if DEBUG
+            if let room = VracDebugSnapshot.initialRoom { selectedRoom = room }
+            VracDebugSnapshot.scheduleIfRequested()
+            #endif
+        }
+        .onChange(of: selectedRoom) { _, _ in
+            updateInspectorPresentation(hasSnapshot: appModel.scanState.snapshot != nil)
         }
         .navigationSplitViewStyle(.balanced)
         .focusedSceneValue(\.isWorkspaceWindowFocused, true)
@@ -731,13 +747,23 @@ private extension ContentView {
     }
 
     var canPresentInspector: Bool {
-        appModel.scanState.snapshot != nil && appModel.scanComparison == nil
+        appModel.scanState.snapshot != nil && appModel.scanComparison == nil && selectedRoom == nil
     }
 
     func updateInspectorPresentation(hasSnapshot: Bool) {
         setInspectorPresented(
-            prefersInspectorPresented && hasSnapshot && appModel.scanComparison == nil
+            prefersInspectorPresented && hasSnapshot && appModel.scanComparison == nil && selectedRoom == nil
         )
+    }
+
+    func explore(_ url: URL) {
+        selectedRoom = nil
+        let standardized = url.standardizedFileURL
+        if let row = appModel.sidebar.smartTargetRows.first(where: { $0.target.url.standardizedFileURL == standardized }) {
+            appModel.selectSidebarTargetAfterViewUpdate(id: row.id)
+        } else {
+            appModel.startScan(ScanTarget(url: url))
+        }
     }
 
     func setInspectorPresented(_ isPresented: Bool) {
