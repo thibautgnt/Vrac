@@ -2,7 +2,7 @@ SIGN_IDENTITY ?= C3542F0B1C830C4B91E42AD38E15C2BD42A8A9D8
 DERIVED := .build/release-derived-data
 APP := $(DERIVED)/Build/Products/Release/Vrac.app
 
-.PHONY: build test install run
+.PHONY: build test install run release
 
 build:
 	xcodebuild -project Radix.xcodeproj -scheme Radix -configuration Release \
@@ -22,3 +22,10 @@ install: build
 
 run: install
 	open /Applications/Vrac.app
+
+VERSION := $(shell grep -m1 'MARKETING_VERSION' Radix.xcodeproj/project.pbxproj | sed 's/.*= \(.*\);/\1/')
+
+release: build
+	rm -f .build/Vrac.zip
+	ditto -c -k --keepParent $(APP) .build/Vrac.zip
+	gh release create v$(VERSION) .build/Vrac.zip --title "Vrac $(VERSION)" --notes-file docs/release-notes.md

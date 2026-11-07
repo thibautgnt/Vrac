@@ -71,6 +71,7 @@ struct ContentView: View {
         .onAppear {
             #if DEBUG
             if let room = VracDebugSnapshot.initialRoom { selectedRoom = room }
+            if let path = UserDefaults.standard.string(forKey: "VracExplore") { explore(URL(fileURLWithPath: path)) }
             VracDebugSnapshot.scheduleIfRequested()
             #endif
         }
