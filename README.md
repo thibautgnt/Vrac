@@ -1,80 +1,32 @@
-<div align="center">
-  <img src="./icon.png" alt="Radix" width="220">
-</div>
+<h1 align="center">Vrac</h1>
 
-<h1 align="center">Radix</h1>
+Vrac montre où est passé l'espace du Mac et aide à en récupérer, sans jamais
+rien supprimer d'autorité : tout passe par une liste à relire puis par la
+Corbeille.
 
-A fast, native macOS disk space analyzer that makes crowded drives easy to understand. Scan folders and volumes, explore where your storage is going, compare results over time, and safely clean up — all without leaving the app. Visit the [Radix website](https://tryradix.app) to learn more!
+C'est un fork personnel de [Radix](https://github.com/colinvkim/Radix)
+(licence MIT, voir `LICENSE`), qui apporte le scan rapide, la carte du disque
+(sunburst et treemap), l'inspecteur, la recherche et la comparaison de scans.
+Vrac y ajoute des salles inspirées de DiskBuddy :
 
-## Why Radix?
+- **Vue d'ensemble** : le disque d'un coup d'œil, ce qui est gardé en gris,
+  ce qui est récupérable en couleur.
+- **Nettoyage** : caches, journaux, fichiers de build, vieux installeurs et
+  téléchargements.
+- **Doublons** : fichiers identiques, comparés octet par octet.
+- **Applications** : chaque app avec ses données, désinstallation complète,
+  restes d'apps supprimées, éléments lancés au démarrage.
+- **Compression** : vidéos en HEVC et photos en HEIC plutôt que supprimées.
+- **Moniteur** : processeur, mémoire, ports et batterie en direct.
 
-Storage fills up quietly. Radix makes it obvious where it went — no Terminal commands, no waiting through scans that crawl forever. Point it at a folder, sit back, and explore a clean visual breakdown of directories and files.
+## Installer
 
-It's built with Swift and SwiftUI, designed to feel like a natural part of macOS.
-
-## Highlights
-
-### Visualize Disk Usage
-
-Switch between **sunburst** and **treemap** views to understand how space is distributed. Hover over an item to inspect it, then double-click a folder to drill deeper.
-
-|                                  Sunburst                                  |                                 Treemap                                  |
-| :------------------------------------------------------------------------: | :----------------------------------------------------------------------: |
-| ![Radix sunburst disk-usage visualization](docs/images/radix-sunburst.png) | ![Radix treemap disk-usage visualization](docs/images/radix-treemap.png) |
-
-### Browse and Search
-
-Use the sortable file browser to inspect items, search the current focus or the entire scan, and filter by item kind or allocated size. Preview files with Quick Look and navigate scans with breadcrumbs and back/forward navigation.
-
-### Compare Scans Over Time
-
-Compare two scans to see which files and folders grew, shrank, appeared, or disappeared.
-
-![Radix scan comparison showing files and folders that changed over time](docs/images/radix-scan-comparison.png)
-
-### Review Cleanup Candidates
-
-Add items from the disk map, file browser, or inspector to the **Discard Pile**. Review everything together before deciding whether to move anything to the Trash.
-
-### Save and Reopen Results
-
-Export completed scans as compact, losslessly compressed `.radixscan` snapshots and reopen them later as read-only results.
-
-## More Features
-
-- Fast, iterative file-system scanning with live progress
-- Faster follow-up scans by reusing previous results when possible
-- Automatic summarization of directories containing thousands of tiny files
-- Custom scan exclusions for paths you do not want to include
-- Optional free-space display in disk maps
-- Smart Locations for mounted volumes, Home, Desktop, Documents, Downloads, Library, and Applications
-- Recent scan history in the sidebar
-- Detailed inspector with sizes, access information, parent directory, and largest children
-- Usage stats showing scans completed, data scanned, scan speeds, chart interactions, and cleanup totals — all stored locally on your Mac
-- Reveal in Finder, Copy Path, Move to Trash, and more actions
-- Drag and drop a folder into the window to start scanning
-- APFS-aware storage accounting that avoids double-counting full clones and detects partial clones
-- Welcome flow with an onboarding and an interactive tour of the app
-- Available in English, German, Spanish, French, Italian, Russian, and Simplified Chinese
-- Automatic updates powered by [Sparkle](https://sparkle-project.org/)
-
-### Privacy & Permissions
-
-Radix works out of the box on any folder you can already access. For some folders, the app may require **Full Disk Access**. Radix detects when files are skipped due to permissions and guides you through enabling them in System Settings.
-
-## Installation
-
-Radix requires **macOS Sonoma 14 or later**.
-
-### Homebrew
-
-```bash
-brew install --cask radix
+```sh
+make install   # compile en Release, signe avec le certificat perso, copie dans /Applications
 ```
 
-### Manual Installation
-
-Download the latest version from [Releases](https://github.com/colinvkim/Radix/releases/latest) or the [Radix website](https://tryradix.app), then drag Radix into your Applications folder.
+La signature stable évite de redonner l'accès complet au disque à chaque
+version. Mises à jour de l'amont : `git fetch upstream && git merge upstream/main`.
 
 ## Developer Documentation
 
