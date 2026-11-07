@@ -28,4 +28,4 @@ VERSION := $(shell grep -m1 'MARKETING_VERSION' Radix.xcodeproj/project.pbxproj 
 release: build
 	rm -f .build/Vrac.zip
 	ditto -c -k --keepParent $(APP) .build/Vrac.zip
-	gh release create v$(VERSION) .build/Vrac.zip --title "Vrac $(VERSION)" --notes-file docs/release-notes.md
+	gh release create --repo thibautgnt/Vrac v$(VERSION) .build/Vrac.zip --title "Vrac $(VERSION)" --notes-file docs/release-notes.md
