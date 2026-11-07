@@ -63,7 +63,7 @@ nonisolated struct ScanArchiveCreatedBy: Codable, Sendable {
     let swiftSchema: String
 
     init(appVersion: String, swiftSchema: String) {
-        self.app = "Radix"
+        self.app = "Vrac"
         self.appVersion = appVersion
         self.swiftSchema = swiftSchema
     }

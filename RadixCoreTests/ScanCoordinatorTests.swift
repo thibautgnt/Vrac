@@ -889,7 +889,7 @@ struct ScanCoordinatorTests {
             isComplete: true,
             scanOptions: folder.scanOptions,
             source: .imported(ImportedSnapshotContext(
-                sourceURL: URL(filePath: "/saved.radixscan"),
+                sourceURL: URL(filePath: "/saved.vracscan"),
                 pathMode: .absolute,
                 liveActionCapability: .pathValidation
             ))

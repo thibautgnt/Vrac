@@ -129,7 +129,7 @@ struct ScanWarningsPopover: View {
                     }
                     .buttonStyle(.borderedProminent)
 
-                    Text("Enable Full Disk Access for Radix, then rescan to include these locations.")
+                    Text("Enable Full Disk Access for Vrac, then rescan to include these locations.")
                         .font(.caption)
                         .foregroundStyle(.secondary)
                         .fixedSize(horizontal: false, vertical: true)

@@ -166,7 +166,7 @@ struct FileDragControllerTests {
         snapshot = ScanSnapshot(
             target: live.target, treeStore: live.treeStore, startedAt: live.startedAt, finishedAt: live.finishedAt,
             scanWarnings: [], isComplete: true,
-            source: .imported(.init(sourceURL: URL(filePath: "/saved.radixscan"), pathMode: .absolute, liveActionCapability: .pathValidation))
+            source: .imported(.init(sourceURL: URL(filePath: "/saved.vracscan"), pathMode: .absolute, liveActionCapability: .pathValidation))
         )
         #expect(!controller.canAttemptDrag(nodeID: live.root.id))
         #expect(controller.prepare(nodeIDs: [live.root.id]) == nil)

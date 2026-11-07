@@ -13,7 +13,7 @@ struct OnboardingFlowView: View {
                     .resizable()
                     .frame(width: 24, height: 24)
                     .accessibilityHidden(true)
-                Text(verbatim: "Radix").font(.headline)
+                Text(verbatim: "Vrac").font(.headline)
                 Spacer()
             }
             .font(.callout)
@@ -57,7 +57,7 @@ struct OnboardingFlowView: View {
                 Text("Full Disk Access")
                     .font(.largeTitle.weight(.semibold))
                     .accessibilityAddTraits(.isHeader)
-                Text("Let Radix scan protected folders for a more complete view of your disk.")
+                Text("Let Vrac scan protected folders for a more complete view of your disk.")
                     .foregroundStyle(.secondary)
             }
 
@@ -70,7 +70,7 @@ struct OnboardingFlowView: View {
                 }
             } else {
                 VStack(spacing: 6) {
-                    Text("Enable Radix under Full Disk Access in System Settings.")
+                    Text("Enable Vrac under Full Disk Access in System Settings.")
                         .font(.callout)
                     Text("Choose Quit & Reopen if prompted.")
                         .font(.caption)
@@ -90,7 +90,7 @@ struct OnboardingFlowView: View {
     private var tourInvitation: some View {
         VStack(spacing: 20) {
             featureIcon("macwindow")
-            heading("Get to know your workspace.", description: "Explore Radix with sample files. Get to know the controls, then try the Discard Pile.")
+            heading("Get to know your workspace.", description: "Explore Vrac with sample files. Get to know the controls, then try the Discard Pile.")
 
             VStack(alignment: .leading, spacing: 14) {
                 tourFeature("Explore your files in the disk map", symbol: "chart.pie")

@@ -405,7 +405,7 @@ private func makePathApp(_ fixture: PathFixture, store: FileTreeStore? = nil) ->
         target: ScanTarget(url: fixture.root.url), treeStore: store ?? fixture.store,
         startedAt: Date(), finishedAt: Date(), scanWarnings: [], isComplete: true,
         source: .imported(ImportedSnapshotContext(
-            sourceURL: URL(filePath: "/saved.radixscan"), pathMode: .absolute,
+            sourceURL: URL(filePath: "/saved.vracscan"), pathMode: .absolute,
             liveActionCapability: .pathValidation
         ))
     )

@@ -138,40 +138,19 @@ private struct GeneralSettingsPane: View {
 
     var body: some View {
         Form {
-            Section("Software Updates") {
+            Section {
                 HStack(spacing: 12) {
-                    Image(systemName: "arrow.triangle.2.circlepath.circle.fill")
+                    Image(systemName: "internaldrive.fill")
                         .font(.system(size: 32))
                         .foregroundStyle(.tint)
                         .accessibilityHidden(true)
 
                     VStack(alignment: .leading, spacing: 3) {
-                        Text("Radix").font(.headline)
+                        Text("Vrac").font(.headline)
                         Text("Version \(version) (\(build))").foregroundStyle(.secondary)
                     }
-                    Spacer()
-                    CheckForUpdatesView(softwareUpdates: softwareUpdates)
-                        .labelStyle(.titleOnly)
                 }
                 .padding(.vertical, 5)
-
-                Toggle(
-                    "Automatically check for updates",
-                    isOn: Binding(
-                        get: { softwareUpdates.automaticallyChecksForUpdates },
-                        set: { softwareUpdates.setAutomaticallyChecksForUpdates($0) }
-                    )
-                )
-
-                Group {
-                    if let lastCheck = softwareUpdates.lastUpdateCheckDate {
-                        Text("Last checked \(lastCheck.formatted(date: .abbreviated, time: .shortened))")
-                    } else {
-                        Text("No update checks yet.")
-                    }
-                }
-                .font(.callout)
-                .foregroundStyle(.secondary)
             }
 
             Section {
@@ -201,7 +180,7 @@ private struct GeneralSettingsPane: View {
                 .foregroundStyle(appModel.fullDiskAccessStatus.fullDiskAccessColor)
                 .font(.callout)
 
-                Text("Allow Radix to scan protected locations such as Mail, Messages, and Safari data.")
+                Text("Allow Vrac to scan protected locations such as Mail, Messages, and Safari data.")
                     .foregroundStyle(.secondary)
 
                 HStack {
@@ -217,7 +196,7 @@ private struct GeneralSettingsPane: View {
             Section("Welcome") {
                 HStack {
                     VStack(alignment: .leading, spacing: 4) {
-                        Text("Get to know Radix")
+                        Text("Get to know Vrac")
                         Text("Revisit the welcome screen and guided tour.")
                             .font(.callout)
                             .foregroundStyle(.secondary)

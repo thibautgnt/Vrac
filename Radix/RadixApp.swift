@@ -7,11 +7,10 @@ struct RadixApp: App {
     @StateObject private var appModel = AppModel()
     @StateObject private var softwareUpdates: SoftwareUpdateModel
     private let updaterController: SPUStandardUpdaterController
-    private let issueReportURL = URL(string: "https://github.com/colinvkim/Radix/issues/new/choose")
 
     init() {
         let updaterController = SPUStandardUpdaterController(
-            startingUpdater: true,
+            startingUpdater: false,
             updaterDelegate: nil,
             userDriverDelegate: nil
         )
@@ -20,7 +19,7 @@ struct RadixApp: App {
     }
 
     var body: some Scene {
-        Window("Radix", id: "main") {
+        Window("Vrac", id: "main") {
             ContentView()
                 .environmentObject(appModel)
                 .frame(minWidth: 1180, maxWidth: .infinity, minHeight: 620, maxHeight: .infinity)
@@ -34,18 +33,6 @@ struct RadixApp: App {
                 navigation: appModel.navigation,
                 workspaceTour: appModel.workspaceTour
             )
-
-            CommandGroup(after: .appInfo) {
-                CheckForUpdatesView(softwareUpdates: softwareUpdates)
-            }
-
-            CommandGroup(after: .help) {
-                Button("Report Issue…", systemImage: "flag") {
-                    if let issueReportURL {
-                        NSWorkspace.shared.open(issueReportURL)
-                    }
-                }
-            }
         }
 
         Settings {

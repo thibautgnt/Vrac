@@ -85,14 +85,14 @@ struct ScanningWorkspaceState: View {
                             .foregroundStyle(.secondary)
                     }
                     .buttonStyle(.plain)
-                    .help("Why Radix is performing a complete scan")
-                    .accessibilityLabel("Why Radix is performing a complete scan")
+                    .help("Why Vrac is performing a complete scan")
+                    .accessibilityLabel("Why Vrac is performing a complete scan")
                     .popover(isPresented: $isFallbackExplanationPresented, arrowEdge: .bottom) {
                         VStack(alignment: .leading, spacing: 8) {
                             Text("Why a complete scan?")
                                 .font(.headline)
                             Text(fallbackCategory.userFacingCause)
-                            Text("Radix is scanning the entire location to ensure accurate results.")
+                            Text("Vrac is scanning the entire location to ensure accurate results.")
                                 .foregroundStyle(.secondary)
                         }
                         .font(.callout)
@@ -175,7 +175,7 @@ struct ScanningWorkspaceState: View {
         case .some(.preparingIncremental):
             return String(
                 localized: "Checking for changes in \(targetName)",
-                comment: "Progress title while Radix prepares an incremental rescan."
+                comment: "Progress title while Vrac prepares an incremental rescan."
             )
         case .some(.incremental), .some(.incrementalNoChanges):
             return String(
@@ -257,7 +257,7 @@ struct ScanCompletionNoticeBanner: View {
     private var detail: String? {
         guard case .fullFallback(let reason) = notice else { return nil }
         let result = String(
-            localized: "Radix scanned the entire location.",
+            localized: "Vrac scanned the entire location.",
             comment: "Result shown after an incremental rescan safely completed as a full scan."
         )
         return "\(reason.presentationCategory.userFacingCause) \(result)"
@@ -355,13 +355,13 @@ extension ScanFallbackCategory {
         case .tooManyChanges:
             return String(localized: "Too much changed for a quick rescan.")
         case .locationChanged:
-            return String(localized: "The scan location changed while Radix was checking it.")
+            return String(localized: "The scan location changed while Vrac was checking it.")
         case .volumeAccounting:
             return String(localized: "Disk rescans need a complete scan to keep storage totals accurate.")
         case .previousScanUnavailable:
             return String(localized: "The previous scan can’t be safely reused.")
         case .incrementalUpdateFailed:
-            return String(localized: "Radix couldn’t safely apply the recent changes.")
+            return String(localized: "Vrac couldn’t safely apply the recent changes.")
         }
     }
 }

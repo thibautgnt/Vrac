@@ -559,7 +559,7 @@ struct FolderRefreshControllerTests {
         })
         let snapshot = isImported
             ? makeFolderRefreshSnapshot(source: .imported(ImportedSnapshotContext(
-                sourceURL: URL(filePath: "/saved.radixscan"), pathMode: .absolute, liveActionCapability: .pathValidation
+                sourceURL: URL(filePath: "/saved.vracscan"), pathMode: .absolute, liveActionCapability: .pathValidation
             )))
             : makeFolderRefreshSnapshot(isComplete: false)
         harness.controller.update(snapshot: snapshot, focusedNodeID: home, canRefresh: true)

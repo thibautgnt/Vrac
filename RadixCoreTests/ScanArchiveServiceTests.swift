@@ -1126,9 +1126,9 @@ struct ScanArchiveServiceTests {
                 to: wrongExtensionURL,
                 options: ScanArchiveExportOptions()
             )
-            Issue.record("Export should reject destinations without the .radixscan extension.")
+            Issue.record("Export should reject destinations without the .vracscan extension.")
         } catch ScanArchiveError.invalidArchivePackage(let detail) {
-            #expect(detail.contains(".radixscan"))
+            #expect(detail.contains(".vracscan"))
         }
 
         #expect(!(FileManager.default.fileExists(atPath: wrongExtensionURL.path)))
@@ -1167,16 +1167,16 @@ struct ScanArchiveServiceTests {
 
         do {
             _ = try await service.previewSnapshot(from: wrongExtensionURL)
-            Issue.record("Preview should reject packages without the .radixscan extension.")
+            Issue.record("Preview should reject packages without the .vracscan extension.")
         } catch ScanArchiveError.invalidArchivePackage(let detail) {
-            #expect(detail.contains(".radixscan"))
+            #expect(detail.contains(".vracscan"))
         }
 
         do {
             _ = try await service.importSnapshot(from: wrongExtensionURL)
-            Issue.record("Import should reject packages without the .radixscan extension.")
+            Issue.record("Import should reject packages without the .vracscan extension.")
         } catch ScanArchiveError.invalidArchivePackage(let detail) {
-            #expect(detail.contains(".radixscan"))
+            #expect(detail.contains(".vracscan"))
         }
     }
 
@@ -1732,7 +1732,7 @@ struct ScanArchiveServiceTests {
             .appending(path: UUID().uuidString, directoryHint: .isDirectory)
         try FileManager.default.createDirectory(at: directoryURL, withIntermediateDirectories: true)
         temporaryFiles.track(directoryURL)
-        return directoryURL.appending(path: "Export.radixscan", directoryHint: .isDirectory)
+        return directoryURL.appending(path: "Export.vracscan", directoryHint: .isDirectory)
     }
 
     private func versionFourOptions(

@@ -898,7 +898,7 @@ struct ScanComparisonServiceTests {
         defer { try? FileManager.default.removeItem(at: archivesURL) }
         var afterSnapshots = [after]
         for version in [4, 5] {
-            let archiveURL = archivesURL.appending(path: "v\(version).radixscan")
+            let archiveURL = archivesURL.appending(path: "v\(version).vracscan")
             let service = ScanArchiveService()
             _ = try await service.export(
                 snapshot: after, to: archiveURL, options: ScanArchiveExportOptions(formatVersion: version)

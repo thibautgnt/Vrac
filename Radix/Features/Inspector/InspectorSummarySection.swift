@@ -20,7 +20,7 @@ struct InspectorSummarySection: View {
                         .lineLimit(2)
 
                     if node.isSynthetic {
-                        Text("Estimated storage that macOS reports as used but that Radix could not attribute to a regular file path.")
+                        Text("Estimated storage that macOS reports as used but that Vrac could not attribute to a regular file path.")
                             .font(.caption)
                             .foregroundStyle(.secondary)
                             .fixedSize(horizontal: false, vertical: true)

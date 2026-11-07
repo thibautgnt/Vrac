@@ -234,13 +234,13 @@ extension FileNodeRecord {
     nonisolated var sharedStorageDescription: String? {
         if cloneIdentity != nil {
             return String(
-                localized: "APFS lets files share storage, but Finder may show the full file size for every clone. Radix counts shared bytes once, so one file carries the allocated size and the others may show zero. That file is only an accounting representative, not an original. Deleting one clone may not free the displayed amount.",
-                comment: "Inspector explanation for a full APFS clone, Finder's size display, and Radix's shared-storage accounting."
+                localized: "APFS lets files share storage, but Finder may show the full file size for every clone. Vrac counts shared bytes once, so one file carries the allocated size and the others may show zero. That file is only an accounting representative, not an original. Deleting one clone may not free the displayed amount.",
+                comment: "Inspector explanation for a full APFS clone, Finder's size display, and Vrac's shared-storage accounting."
             )
         }
         if mayShareDataBlocks {
             return String(
-                localized: "Parts of this file may share APFS storage. macOS does not expose enough information for Radix to calculate exact shared or reclaimable bytes.",
+                localized: "Parts of this file may share APFS storage. macOS does not expose enough information for Vrac to calculate exact shared or reclaimable bytes.",
                 comment: "Inspector explanation for a file that may still share some APFS data blocks."
             )
         }

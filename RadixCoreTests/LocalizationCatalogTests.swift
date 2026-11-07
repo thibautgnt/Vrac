@@ -2,7 +2,7 @@ import Foundation
 import Testing
 
 struct LocalizationCatalogTests {
-    private let supportedLocales = ["de", "es", "fr", "it", "ru", "zh-Hans"]
+    private let supportedLocales = ["fr"]
 
     private struct LocalizedSourceLiteral {
         let value: String
@@ -214,9 +214,9 @@ struct LocalizationCatalogTests {
                 == "Ограниченный охват: не удалось прочитать 22 расположения. Отсутствующие в них объекты не обязательно были удалены.")
         #expect(
             render(
-                "Radix will ask macOS to move %lld selected items to the Trash:\n%@%@",
+                "Vrac will ask macOS to move %lld selected items to the Trash:\n%@%@",
                 Int64(21), "/example", "\n+ ещё 20")
-                == "Radix попросит macOS переместить 21 выбранный объект в Корзину:\n/example\n+ ещё 20")
+                == "Vrac попросит macOS переместить 21 выбранный объект в Корзину:\n/example\n+ ещё 20")
     }
 
     @Test

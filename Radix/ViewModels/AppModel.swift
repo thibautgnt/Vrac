@@ -94,22 +94,22 @@ nonisolated enum FileActionError: LocalizedError, Sendable {
         case .changedSinceScan(let path):
             return String(localized: "The item at \(path) changed since this scan. Rescan before moving it to Trash.", comment: "Safety error shown when a selected item changed after scanning.")
         case .missingScannedIdentity(let path):
-            return String(localized: "Radix could not verify the scanned identity for \(path). Rescan before moving it to Trash.", comment: "Safety error shown when a scanned file identity cannot be verified.")
+            return String(localized: "Vrac could not verify the scanned identity for \(path). Rescan before moving it to Trash.", comment: "Safety error shown when a scanned file identity cannot be verified.")
         case .currentIdentityUnavailable(let path, let reason):
-            return String(localized: "Radix could not verify the current identity for \(path): \(reason)", comment: "Safety error shown when the current file identity cannot be verified.")
+            return String(localized: "Vrac could not verify the current identity for \(path): \(reason)", comment: "Safety error shown when the current file identity cannot be verified.")
         case .unsupported:
             return String(localized: "This item does not support that action.", comment: "Error shown when a selected item cannot perform the requested action.")
         case .directoryRequired:
             return String(localized: "Choose a folder with contents to zoom in.", comment: "Error shown when zooming requires a directory.")
         case .packageContentsHidden(let settingEnabled):
             if settingEnabled {
-                return String(localized: "Radix scanned this package before package contents were expanded. Rescan this location to zoom into it.", comment: "Error shown when a package needs to be rescanned after enabling package expansion.")
+                return String(localized: "Vrac scanned this package before package contents were expanded. Rescan this location to zoom into it.", comment: "Error shown when a package needs to be rescanned after enabling package expansion.")
             }
-            return String(localized: "Radix scanned this package as a single item. To zoom into it, turn on “Expand packages” in Settings, then rescan this location.", comment: "Error explaining how to enable package expansion before zooming into a package.")
+            return String(localized: "Vrac scanned this package as a single item. To zoom into it, turn on “Expand packages” in Settings, then rescan this location.", comment: "Error explaining how to enable package expansion before zooming into a package.")
         case .folderRequiredForDrop:
             return String(localized: "Drop a folder or mounted volume to start a scan.", comment: "Error shown when a dropped item is not a folder or volume.")
         case .fullDiskAccessSettingsUnavailable:
-            return String(localized: "Radix could not open Full Disk Access settings.", comment: "Error shown when System Settings cannot open Full Disk Access.")
+            return String(localized: "Vrac could not open Full Disk Access settings.", comment: "Error shown when System Settings cannot open Full Disk Access.")
         case .readOnlySnapshot:
             return String(localized: "Imported snapshots are read-only.", comment: "Error shown when a file action is attempted on an imported snapshot.")
         case .readOnlyMode:
@@ -1152,7 +1152,7 @@ final class AppModel: ObservableObject {
         if pendingImportPreview != nil {
             return String(localized: "Finish or cancel the current import preview before importing another snapshot.", comment: "Error shown when a second import is attempted during import preview.")
         }
-        return String(localized: "Radix cannot import a snapshot right now.", comment: "Fallback error shown when importing is unavailable.")
+        return String(localized: "Vrac cannot import a snapshot right now.", comment: "Fallback error shown when importing is unavailable.")
     }
 
     private var comparisonUnavailableMessage: String {
@@ -1171,7 +1171,7 @@ final class AppModel: ObservableObject {
         if pendingImportPreview != nil {
             return String(localized: "Finish or cancel the current import preview before comparing snapshots.", comment: "Error shown when comparison is attempted during import preview.")
         }
-        return String(localized: "Radix cannot compare snapshots right now.", comment: "Fallback error shown when comparison is unavailable.")
+        return String(localized: "Vrac cannot compare snapshots right now.", comment: "Fallback error shown when comparison is unavailable.")
     }
 
     func compareScanSnapshots() {
@@ -1189,7 +1189,7 @@ final class AppModel: ObservableObject {
             return
         }
         guard sourceURLs.count == 2 else {
-            presentErrorMessage(String(localized: "Choose exactly two Radix scan snapshots to compare.", comment: "Error shown when comparison is given the wrong number of snapshots."))
+            presentErrorMessage(String(localized: "Choose exactly two Vrac scan snapshots to compare.", comment: "Error shown when comparison is given the wrong number of snapshots."))
             return
         }
 
@@ -3520,7 +3520,7 @@ final class AppModel: ObservableObject {
             .union(.controlCharacters)
         let components = name.components(separatedBy: invalidCharacters)
         let sanitizedName = components.joined(separator: "-").trimmingCharacters(in: .whitespacesAndNewlines)
-        return sanitizedName.isEmpty ? String(localized: "Radix Scan", comment: "Fallback filename for an exported scan.") : sanitizedName
+        return sanitizedName.isEmpty ? String(localized: "Vrac Scan", comment: "Fallback filename for an exported scan.") : sanitizedName
     }
 
     private static func currentAppVersion() -> String {

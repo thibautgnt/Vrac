@@ -850,7 +850,7 @@ struct ScanModelTests {
         ]
         let importedSource = ScanSnapshotSource.imported(
             ImportedSnapshotContext(
-                sourceURL: URL(filePath: "/tmp/example.radixscan"),
+                sourceURL: URL(filePath: "/tmp/example.vracscan"),
                 pathMode: .absolute,
                 liveActionCapability: .pathValidation
             )

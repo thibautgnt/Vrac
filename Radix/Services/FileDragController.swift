@@ -3,7 +3,7 @@ import CoreTransferable
 import UniformTypeIdentifiers
 
 struct DiscardPileDragPayload: Codable, Hashable, Transferable {
-    static let contentType = UTType(exportedAs: "dev.colinkim.radix.discard-pile-drag-payload")
+    static let contentType = UTType(exportedAs: "fr.thibz.vrac.discard-pile-drag-payload")
     let snapshotID: UUID
     let nodeIDs: [FileNodeRecord.ID]
 

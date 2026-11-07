@@ -7,26 +7,22 @@
 		<dict>
 			<key>CFBundleTypeExtensions</key>
 			<array>
-				<string>radixscan</string>
+				<string>vracscan</string>
 			</array>
 			<key>CFBundleTypeName</key>
-			<string>Radix Scan Snapshot</string>
+			<string>Vrac Scan Snapshot</string>
 			<key>CFBundleTypeRole</key>
 			<string>Viewer</string>
 			<key>LSHandlerRank</key>
 			<string>Owner</string>
 			<key>LSItemContentTypes</key>
 			<array>
-				<string>dev.colinkim.radix.scan</string>
+				<string>fr.thibz.vrac.scan</string>
 			</array>
 		</dict>
 	</array>
-	<key>SUFeedURL</key>
-	<string>https://tryradix.app/appcast.xml</string>
-	<key>SUPublicEDKey</key>
-	<string>p8XNK5WipyOCtLH5ETLxpulo1nc2aY7detwrhjxNKIs=</string>
 	<key>SUEnableAutomaticChecks</key>
-	<true/>
+	<false/>
 	<key>SUScheduledCheckInterval</key>
 	<integer>86400</integer>
 	<key>UTExportedTypeDeclarations</key>
@@ -37,9 +33,9 @@
 				<string>public.json</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>Radix Discard Pile Drag Payload</string>
+			<string>Vrac Discard Pile Drag Payload</string>
 			<key>UTTypeIdentifier</key>
-			<string>dev.colinkim.radix.discard-pile-drag-payload</string>
+			<string>fr.thibz.vrac.discard-pile-drag-payload</string>
 		</dict>
 		<dict>
 			<key>UTTypeConformsTo</key>
@@ -47,14 +43,14 @@
 				<string>com.apple.package</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>Radix Scan Snapshot</string>
+			<string>Vrac Scan Snapshot</string>
 			<key>UTTypeIdentifier</key>
-			<string>dev.colinkim.radix.scan</string>
+			<string>fr.thibz.vrac.scan</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
 				<array>
-					<string>radixscan</string>
+					<string>vracscan</string>
 				</array>
 			</dict>
 		</dict>

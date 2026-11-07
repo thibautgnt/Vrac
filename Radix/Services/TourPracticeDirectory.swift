@@ -45,7 +45,7 @@ nonisolated struct TourPracticeDirectory: Sendable {
                 try manager.createDirectory(at: directory, withIntermediateDirectories: true)
             }
 
-            let sampleText = String(localized: "These sample files were created for the Radix tour.") + "\n"
+            let sampleText = String(localized: "These sample files were created for the Vrac tour.") + "\n"
             let files: [(URL, Int)] = [
                 (root.appendingPathComponent(String(localized: "Welcome.txt")), 1),
                 (documents.appendingPathComponent(String(localized: "Notes.txt")), 64 * 1024),

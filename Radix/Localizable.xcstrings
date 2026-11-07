@@ -528,43 +528,43 @@
         }
       }
     },
-    "%@ logical size. Radix counts shared bytes once across clones, so deleting this file may free less than its apparent size." : {
+    "%@ logical size. Vrac counts shared bytes once across clones, so deleting this file may free less than its apparent size." : {
       "comment" : "Inspector explanation for an APFS clone's logical size and attributed allocated storage.",
       "localizations" : {
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "%@ logische Größe. Radix zählt gemeinsam genutzte Bytes klonübergreifend nur einmal, daher gibt das Löschen dieser Datei möglicherweise weniger als ihre scheinbare Größe frei."
+            "value" : "%@ logische Größe. Vrac zählt gemeinsam genutzte Bytes klonübergreifend nur einmal, daher gibt das Löschen dieser Datei möglicherweise weniger als ihre scheinbare Größe frei."
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "%@ de tamaño lógico. Radix cuenta los bytes compartidos una sola vez entre los clones, por lo que eliminar este archivo puede liberar menos que su tamaño aparente."
+            "value" : "%@ de tamaño lógico. Vrac cuenta los bytes compartidos una sola vez entre los clones, por lo que eliminar este archivo puede liberar menos que su tamaño aparente."
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "%@ de taille logique. Radix ne compte qu’une fois les octets partagés entre les clones ; supprimer ce fichier peut donc libérer moins que sa taille apparente."
+            "value" : "%@ de taille logique. Vrac ne compte qu’une fois les octets partagés entre les clones ; supprimer ce fichier peut donc libérer moins que sa taille apparente."
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "%@ di dimensione logica. Radix conta una sola volta i byte condivisi tra i cloni, quindi eliminare questo file potrebbe liberare meno della sua dimensione apparente."
+            "value" : "%@ di dimensione logica. Vrac conta una sola volta i byte condivisi tra i cloni, quindi eliminare questo file potrebbe liberare meno della sua dimensione apparente."
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Логический размер — %@. Radix учитывает общие байты клонов только один раз, поэтому удаление этого файла может освободить меньше места, чем показывает его размер."
+            "value" : "Логический размер — %@. Vrac учитывает общие байты клонов только один раз, поэтому удаление этого файла может освободить меньше места, чем показывает его размер."
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "逻辑大小为 %@。Radix 对克隆间共享的字节只计算一次，因此删除此文件释放的空间可能小于其显示大小。"
+            "value" : "逻辑大小为 %@。Vrac 对克隆间共享的字节只计算一次，因此删除此文件释放的空间可能小于其显示大小。"
           }
         }
       }
@@ -4147,48 +4147,48 @@
         }
       }
     },
-    "Allow Radix to scan protected locations such as Mail, Messages, and Safari data." : {
+    "Allow Vrac to scan protected locations such as Mail, Messages, and Safari data." : {
       "localizations" : {
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix erlauben, geschützte Speicherorte wie Mail-, Nachrichten- und Safari-Daten zu scannen."
+            "value" : "Vrac erlauben, geschützte Speicherorte wie Mail-, Nachrichten- und Safari-Daten zu scannen."
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Allow Radix to scan protected locations such as Mail, Messages, and Safari data."
+            "value" : "Allow Vrac to scan protected locations such as Mail, Messages, and Safari data."
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Permite que Radix analice ubicaciones protegidas, como los datos de Mail, Mensajes y Safari."
+            "value" : "Permite que Vrac analice ubicaciones protegidas, como los datos de Mail, Mensajes y Safari."
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Autorisez Radix à analyser les emplacements protégés, comme les données de Mail, Messages et Safari."
+            "value" : "Autorisez Vrac à analyser les emplacements protégés, comme les données de Mail, Messages et Safari."
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Consenti a Radix di scansionare posizioni protette come i dati di Mail, Messaggi e Safari."
+            "value" : "Consenti a Vrac di scansionare posizioni protette come i dati di Mail, Messaggi e Safari."
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Разрешите Radix сканировать защищённые данные, например Почты, Сообщений и Safari."
+            "value" : "Разрешите Vrac сканировать защищённые данные, например Почты, Сообщений и Safari."
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "允许 Radix 扫描受保护的位置，例如邮件、信息和 Safari 数据。"
+            "value" : "允许 Vrac 扫描受保护的位置，例如邮件、信息和 Safari 数据。"
           }
         }
       }
@@ -4321,49 +4321,49 @@
         }
       }
     },
-    "APFS lets files share storage, but Finder may show the full file size for every clone. Radix counts shared bytes once, so one file carries the allocated size and the others may show zero. That file is only an accounting representative, not an original. Deleting one clone may not free the displayed amount." : {
-      "comment" : "Inspector explanation for a full APFS clone, Finder's size display, and Radix's shared-storage accounting.",
+    "APFS lets files share storage, but Finder may show the full file size for every clone. Vrac counts shared bytes once, so one file carries the allocated size and the others may show zero. That file is only an accounting representative, not an original. Deleting one clone may not free the displayed amount." : {
+      "comment" : "Inspector explanation for a full APFS clone, Finder's size display, and Vrac's shared-storage accounting.",
       "localizations" : {
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "APFS ermöglicht es Dateien, Speicher gemeinsam zu nutzen, aber der Finder zeigt möglicherweise für jeden Klon die vollständige Dateigröße an. Radix zählt gemeinsam genutzte Bytes nur einmal, sodass eine Datei die zugeordnete Größe trägt und die anderen möglicherweise null anzeigen. Diese Datei ist nur ein Repräsentant für die Speicherzuordnung, nicht das Original. Durch das Löschen eines Klons wird möglicherweise nicht der angezeigte Speicherplatz freigegeben."
+            "value" : "APFS ermöglicht es Dateien, Speicher gemeinsam zu nutzen, aber der Finder zeigt möglicherweise für jeden Klon die vollständige Dateigröße an. Vrac zählt gemeinsam genutzte Bytes nur einmal, sodass eine Datei die zugeordnete Größe trägt und die anderen möglicherweise null anzeigen. Diese Datei ist nur ein Repräsentant für die Speicherzuordnung, nicht das Original. Durch das Löschen eines Klons wird möglicherweise nicht der angezeigte Speicherplatz freigegeben."
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "APFS lets files share storage, but Finder may show the full file size for every clone. Radix counts shared bytes once, so one file carries the allocated size and the others may show zero. That file is only an accounting representative, not an original. Deleting one clone may not free the displayed amount."
+            "value" : "APFS lets files share storage, but Finder may show the full file size for every clone. Vrac counts shared bytes once, so one file carries the allocated size and the others may show zero. That file is only an accounting representative, not an original. Deleting one clone may not free the displayed amount."
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "APFS permite que los archivos compartan almacenamiento, pero Finder puede mostrar el tamaño completo de cada clon. Radix cuenta los bytes compartidos una sola vez, por lo que un archivo muestra el tamaño asignado y los demás pueden mostrar cero. Ese archivo es solo un representante contable, no el original. Eliminar un clon puede no liberar la cantidad mostrada."
+            "value" : "APFS permite que los archivos compartan almacenamiento, pero Finder puede mostrar el tamaño completo de cada clon. Vrac cuenta los bytes compartidos una sola vez, por lo que un archivo muestra el tamaño asignado y los demás pueden mostrar cero. Ese archivo es solo un representante contable, no el original. Eliminar un clon puede no liberar la cantidad mostrada."
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "APFS permet aux fichiers de partager de l’espace de stockage, mais le Finder peut afficher la taille complète de chaque clone. Radix ne compte les octets partagés qu’une seule fois : un fichier porte donc la taille allouée et les autres peuvent afficher zéro. Ce fichier est uniquement un représentant comptable, pas l’original. La suppression d’un clone peut ne pas libérer la quantité affichée."
+            "value" : "APFS permet aux fichiers de partager de l’espace de stockage, mais le Finder peut afficher la taille complète de chaque clone. Vrac ne compte les octets partagés qu’une seule fois : un fichier porte donc la taille allouée et les autres peuvent afficher zéro. Ce fichier est uniquement un représentant comptable, pas l’original. La suppression d’un clone peut ne pas libérer la quantité affichée."
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "APFS consente ai file di condividere spazio di archiviazione, ma il Finder potrebbe mostrare la dimensione completa di ogni clone. Radix conta i byte condivisi una sola volta, quindi un file riporta la dimensione allocata e gli altri possono mostrare zero. Quel file è solo un riferimento contabile, non l’originale. L’eliminazione di un clone potrebbe non liberare la quantità indicata."
+            "value" : "APFS consente ai file di condividere spazio di archiviazione, ma il Finder potrebbe mostrare la dimensione completa di ogni clone. Vrac conta i byte condivisi una sola volta, quindi un file riporta la dimensione allocata e gli altri possono mostrare zero. Quel file è solo un riferimento contabile, non l’originale. L’eliminazione di un clone potrebbe non liberare la quantità indicata."
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "APFS позволяет файлам совместно использовать место, но Finder может показывать полный размер каждого клона. Radix учитывает общие байты только один раз, поэтому занимаемый размер относится к одному файлу, а у остальных может отображаться ноль. Этот файл выбран только для учёта и не является «оригиналом». Удаление одного клона может освободить меньше места, чем указано."
+            "value" : "APFS позволяет файлам совместно использовать место, но Finder может показывать полный размер каждого клона. Vrac учитывает общие байты только один раз, поэтому занимаемый размер относится к одному файлу, а у остальных может отображаться ноль. Этот файл выбран только для учёта и не является «оригиналом». Удаление одного клона может освободить меньше места, чем указано."
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "APFS 允许文件共享存储空间，但“访达”可能会显示每个克隆文件的完整大小。Radix 只计算一次共享字节，因此一个文件会显示已分配大小，而其他文件可能显示为零。该文件只是记账代表，并非原始文件。删除一个克隆文件不一定会释放所显示的空间。"
+            "value" : "APFS 允许文件共享存储空间，但“访达”可能会显示每个克隆文件的完整大小。Vrac 只计算一次共享字节，因此一个文件会显示已分配大小，而其他文件可能显示为零。该文件只是记账代表，并非原始文件。删除一个克隆文件不一定会释放所显示的空间。"
           }
         }
       }
@@ -4661,43 +4661,43 @@
         }
       }
     },
-    "Archive stats did not match node payload. Radix repaired totals during import." : {
+    "Archive stats did not match node payload. Vrac repaired totals during import." : {
       "comment" : "Warning shown when imported archive statistics are repaired.",
       "localizations" : {
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Die Archivstatistiken stimmten nicht mit den Knotendaten überein. Radix hat die Summen beim Import repariert."
+            "value" : "Die Archivstatistiken stimmten nicht mit den Knotendaten überein. Vrac hat die Summen beim Import repariert."
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Las estadísticas del archivo no coincidían con los datos de los nodos. Radix reparó los totales durante la importación."
+            "value" : "Las estadísticas del archivo no coincidían con los datos de los nodos. Vrac reparó los totales durante la importación."
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Les statistiques de l’archive ne correspondaient pas aux données des nœuds. Radix a réparé les totaux pendant l’importation."
+            "value" : "Les statistiques de l’archive ne correspondaient pas aux données des nœuds. Vrac a réparé les totaux pendant l’importation."
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Le statistiche dell'archivio non corrispondevano ai dati dei nodi. Radix ha riparato i totali durante l'importazione."
+            "value" : "Le statistiche dell'archivio non corrispondevano ai dati dei nodi. Vrac ha riparato i totali durante l'importazione."
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Статистика архива не совпала с данными узлов. Radix исправил итоговые значения при импорте."
+            "value" : "Статистика архива не совпала с данными узлов. Vrac исправил итоговые значения при импорте."
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "归档统计信息与节点数据不一致。Radix 已在导入时修复总计。"
+            "value" : "归档统计信息与节点数据不一致。Vrac 已在导入时修复总计。"
           }
         }
       }
@@ -5321,7 +5321,7 @@
       }
     },
     "Checking for changes in %@" : {
-      "comment" : "Progress title while Radix prepares an incremental rescan.",
+      "comment" : "Progress title while Vrac prepares an incremental rescan.",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -5901,43 +5901,43 @@
         }
       }
     },
-    "Choose a Radix scan snapshot." : {
+    "Choose a Vrac scan snapshot." : {
       "comment" : "Open panel instruction for selecting a saved scan snapshot.",
       "localizations" : {
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Wählen Sie einen Radix-Scan-Snapshot aus."
+            "value" : "Wählen Sie einen Vrac-Scan-Snapshot aus."
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Elige una instantánea de análisis de Radix."
+            "value" : "Elige una instantánea de análisis de Vrac."
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Choisissez un instantané d’analyse Radix."
+            "value" : "Choisissez un instantané d’analyse Vrac."
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Scegli un'istantanea di scansione di Radix."
+            "value" : "Scegli un'istantanea di scansione di Vrac."
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Выберите снимок сканирования Radix."
+            "value" : "Выберите снимок сканирования Vrac."
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "选择 Radix 扫描快照。"
+            "value" : "选择 Vrac 扫描快照。"
           }
         }
       }
@@ -6071,43 +6071,43 @@
         }
       }
     },
-    "Choose exactly two Radix scan snapshots to compare." : {
+    "Choose exactly two Vrac scan snapshots to compare." : {
       "comment" : "Error shown when comparison is given the wrong number of snapshots.",
       "localizations" : {
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Wählen Sie genau zwei Radix-Scan-Snapshots zum Vergleichen aus."
+            "value" : "Wählen Sie genau zwei Vrac-Scan-Snapshots zum Vergleichen aus."
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Elige exactamente dos instantáneas de análisis de Radix para compararlas."
+            "value" : "Elige exactamente dos instantáneas de análisis de Vrac para compararlas."
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Choisissez exactement deux instantanés d’analyse Radix à comparer."
+            "value" : "Choisissez exactement deux instantanés d’analyse Vrac à comparer."
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Scegli esattamente due istantanee di scansione di Radix da confrontare."
+            "value" : "Scegli esattamente due istantanee di scansione di Vrac da confrontare."
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Для сравнения выберите ровно два снимка сканирования Radix."
+            "value" : "Для сравнения выберите ровно два снимка сканирования Vrac."
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "请选择两个 Radix 扫描快照进行比较。"
+            "value" : "请选择两个 Vrac 扫描快照进行比较。"
           }
         }
       }
@@ -9600,90 +9600,90 @@
         }
       }
     },
-    "Enable Full Disk Access for Radix, then rescan to include these locations." : {
+    "Enable Full Disk Access for Vrac, then rescan to include these locations." : {
       "comment" : "Inspector warning popover instructions when Full Disk Access may help.",
       "localizations" : {
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Aktivieren Sie den Festplattenvollzugriff für Radix und scannen Sie anschließend erneut, um diese Orte einzubeziehen."
+            "value" : "Aktivieren Sie den Festplattenvollzugriff für Vrac und scannen Sie anschließend erneut, um diese Orte einzubeziehen."
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Activa el acceso total al disco para Radix y vuelve a analizar para incluir estas ubicaciones."
+            "value" : "Activa el acceso total al disco para Vrac y vuelve a analizar para incluir estas ubicaciones."
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Activez l’accès complet au disque pour Radix, puis relancez l’analyse pour inclure ces emplacements."
+            "value" : "Activez l’accès complet au disque pour Vrac, puis relancez l’analyse pour inclure ces emplacements."
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Abilita Accesso completo al disco per Radix, quindi esegui nuovamente la scansione per includere queste posizioni."
+            "value" : "Abilita Accesso completo al disco per Vrac, quindi esegui nuovamente la scansione per includere queste posizioni."
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Включите для Radix полный доступ к диску, затем выполните повторное сканирование, чтобы включить эти расположения."
+            "value" : "Включите для Vrac полный доступ к диску, затем выполните повторное сканирование, чтобы включить эти расположения."
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "为 Radix 启用完全磁盘访问权限，然后重新扫描以包含这些位置。"
+            "value" : "为 Vrac 启用完全磁盘访问权限，然后重新扫描以包含这些位置。"
           }
         }
       }
     },
-    "Enable Radix under Full Disk Access in System Settings." : {
+    "Enable Vrac under Full Disk Access in System Settings." : {
       "extractionState" : "manual",
       "localizations" : {
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Aktivieren Sie Radix in den Systemeinstellungen unter „Festplattenvollzugriff“."
+            "value" : "Aktivieren Sie Vrac in den Systemeinstellungen unter „Festplattenvollzugriff“."
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Enable Radix under Full Disk Access in System Settings."
+            "value" : "Enable Vrac under Full Disk Access in System Settings."
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Activa Radix en Acceso total al disco dentro de Ajustes del Sistema."
+            "value" : "Activa Vrac en Acceso total al disco dentro de Ajustes del Sistema."
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Activez Radix dans Accès complet au disque dans les Réglages Système."
+            "value" : "Activez Vrac dans Accès complet au disque dans les Réglages Système."
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Attiva Radix in Accesso completo al disco nelle Impostazioni di Sistema."
+            "value" : "Attiva Vrac in Accesso completo al disco nelle Impostazioni di Sistema."
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Разрешите Radix полный доступ к диску в Системных настройках."
+            "value" : "Разрешите Vrac полный доступ к диску в Системных настройках."
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "在“系统设置”的“完全磁盘访问权限”中启用 Radix。"
+            "value" : "在“系统设置”的“完全磁盘访问权限”中启用 Vrac。"
           }
         }
       }
@@ -9770,42 +9770,42 @@
         }
       }
     },
-    "Estimated storage that macOS reports as used but that Radix could not attribute to a regular file path." : {
+    "Estimated storage that macOS reports as used but that Vrac could not attribute to a regular file path." : {
       "localizations" : {
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Geschätzter Speicherplatz, den macOS als belegt meldet, den Radix jedoch keinem regulären Dateipfad zuordnen konnte."
+            "value" : "Geschätzter Speicherplatz, den macOS als belegt meldet, den Vrac jedoch keinem regulären Dateipfad zuordnen konnte."
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Almacenamiento estimado que macOS informa como usado pero que Radix no pudo atribuir a una ruta de archivo normal."
+            "value" : "Almacenamiento estimado que macOS informa como usado pero que Vrac no pudo atribuir a una ruta de archivo normal."
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Espace estimé que macOS indique comme utilisé, mais que Radix n’a pas pu attribuer à un chemin de fichier standard."
+            "value" : "Espace estimé que macOS indique comme utilisé, mais que Vrac n’a pas pu attribuer à un chemin de fichier standard."
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Spazio stimato che macOS segnala come utilizzato, ma che Radix non ha potuto attribuire a un percorso di file standard."
+            "value" : "Spazio stimato che macOS segnala come utilizzato, ma che Vrac non ha potuto attribuire a un percorso di file standard."
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Оценочный объём, который macOS считает занятым, но который Radix не смог связать с обычным путём файловой системы."
+            "value" : "Оценочный объём, который macOS считает занятым, но который Vrac не смог связать с обычным путём файловой системы."
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "macOS 报告为已用但 Radix 无法归因到普通文件路径的估计存储空间。"
+            "value" : "macOS 报告为已用但 Vrac 无法归因到普通文件路径的估计存储空间。"
           }
         }
       }
@@ -10366,49 +10366,49 @@
         }
       }
     },
-    "Explore Radix with sample files. Get to know the controls, then try the Discard Pile." : {
+    "Explore Vrac with sample files. Get to know the controls, then try the Discard Pile." : {
       "extractionState" : "manual",
       "localizations" : {
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Erkunden Sie Radix mit Beispieldateien. Lernen Sie die Bedienelemente kennen und probieren Sie dann die Löschliste aus."
+            "value" : "Erkunden Sie Vrac mit Beispieldateien. Lernen Sie die Bedienelemente kennen und probieren Sie dann die Löschliste aus."
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Explore Radix with sample files. Get to know the controls, then try the Discard Pile."
+            "value" : "Explore Vrac with sample files. Get to know the controls, then try the Discard Pile."
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Explora Radix con archivos de ejemplo. Conoce los controles y prueba la pila de descarte."
+            "value" : "Explora Vrac con archivos de ejemplo. Conoce los controles y prueba la pila de descarte."
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Explorez Radix avec des fichiers d’exemple. Découvrez les commandes, puis essayez la pile de suppression."
+            "value" : "Explorez Vrac avec des fichiers d’exemple. Découvrez les commandes, puis essayez la pile de suppression."
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Esplora Radix con file di esempio. Scopri i comandi, poi prova l’elenco di eliminazione."
+            "value" : "Esplora Vrac con file di esempio. Scopri i comandi, poi prova l’elenco di eliminazione."
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Познакомьтесь с Radix на примере тестовых файлов. Освойте элементы управления, а затем попробуйте список на удаление."
+            "value" : "Познакомьтесь с Vrac на примере тестовых файлов. Освойте элементы управления, а затем попробуйте список на удаление."
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "使用示例文件探索 Radix。了解各个控件，然后试用待处理列表。"
+            "value" : "使用示例文件探索 Vrac。了解各个控件，然后试用待处理列表。"
           }
         }
       }
@@ -12223,48 +12223,48 @@
         }
       }
     },
-    "Get to know Radix" : {
+    "Get to know Vrac" : {
       "localizations" : {
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix kennenlernen"
+            "value" : "Vrac kennenlernen"
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Get to know Radix"
+            "value" : "Get to know Vrac"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Conoce Radix"
+            "value" : "Conoce Vrac"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Découvrez Radix"
+            "value" : "Découvrez Vrac"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Scopri Radix"
+            "value" : "Scopri Vrac"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Знакомство с Radix"
+            "value" : "Знакомство с Vrac"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "了解 Radix"
+            "value" : "了解 Vrac"
           }
         }
       }
@@ -14066,49 +14066,49 @@
         }
       }
     },
-    "Let Radix scan protected folders for a more complete view of your disk." : {
+    "Let Vrac scan protected folders for a more complete view of your disk." : {
       "extractionState" : "manual",
       "localizations" : {
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Lassen Sie Radix geschützte Ordner scannen, um einen vollständigeren Überblick über Ihren Datenträger zu erhalten."
+            "value" : "Lassen Sie Vrac geschützte Ordner scannen, um einen vollständigeren Überblick über Ihren Datenträger zu erhalten."
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Let Radix scan protected folders for a more complete view of your disk."
+            "value" : "Let Vrac scan protected folders for a more complete view of your disk."
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Permite a Radix analizar carpetas protegidas para obtener una visión más completa de tu disco."
+            "value" : "Permite a Vrac analizar carpetas protegidas para obtener una visión más completa de tu disco."
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Autorisez Radix à analyser les dossiers protégés pour obtenir une vue plus complète de votre disque."
+            "value" : "Autorisez Vrac à analyser les dossiers protégés pour obtenir une vue plus complète de votre disque."
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Consenti a Radix di analizzare le cartelle protette per una visione più completa del disco."
+            "value" : "Consenti a Vrac di analizzare le cartelle protette per una visione più completa del disco."
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Разрешите Radix сканировать защищённые папки, чтобы получить более полную картину использования диска."
+            "value" : "Разрешите Vrac сканировать защищённые папки, чтобы получить более полную картину использования диска."
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "允许 Radix 扫描受保护的文件夹，以更全面地了解磁盘空间使用情况。"
+            "value" : "允许 Vrac 扫描受保护的文件夹，以更全面地了解磁盘空间使用情况。"
           }
         }
       }
@@ -14761,7 +14761,7 @@
       }
     },
     "manifest expected %lld nodes, exceeding the supported node count" : {
-      "comment" : "Error message when a scan archive declares more nodes than Radix supports.",
+      "comment" : "Error message when a scan archive declares more nodes than Vrac supports.",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -18341,49 +18341,49 @@
         }
       }
     },
-    "Parts of this file may share APFS storage. macOS does not expose enough information for Radix to calculate exact shared or reclaimable bytes." : {
+    "Parts of this file may share APFS storage. macOS does not expose enough information for Vrac to calculate exact shared or reclaimable bytes." : {
       "comment" : "Inspector explanation for a file that may still share some APFS data blocks.",
       "localizations" : {
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Teile dieser Datei nutzen möglicherweise APFS-Speicher gemeinsam. macOS stellt Radix nicht genügend Informationen bereit, um die genaue Anzahl gemeinsam genutzter oder freigebbarer Bytes zu berechnen."
+            "value" : "Teile dieser Datei nutzen möglicherweise APFS-Speicher gemeinsam. macOS stellt Vrac nicht genügend Informationen bereit, um die genaue Anzahl gemeinsam genutzter oder freigebbarer Bytes zu berechnen."
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Parts of this file may share APFS storage. macOS does not expose enough information for Radix to calculate exact shared or reclaimable bytes."
+            "value" : "Parts of this file may share APFS storage. macOS does not expose enough information for Vrac to calculate exact shared or reclaimable bytes."
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Es posible que partes de este archivo compartan almacenamiento APFS. macOS no proporciona a Radix suficiente información para calcular con exactitud los bytes compartidos o recuperables."
+            "value" : "Es posible que partes de este archivo compartan almacenamiento APFS. macOS no proporciona a Vrac suficiente información para calcular con exactitud los bytes compartidos o recuperables."
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Certaines parties de ce fichier peuvent partager du stockage APFS. macOS ne fournit pas à Radix suffisamment d’informations pour calculer précisément les octets partagés ou récupérables."
+            "value" : "Certaines parties de ce fichier peuvent partager du stockage APFS. macOS ne fournit pas à Vrac suffisamment d’informations pour calculer précisément les octets partagés ou récupérables."
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Parti di questo file potrebbero condividere spazio APFS. macOS non fornisce a Radix informazioni sufficienti per calcolare con esattezza i byte condivisi o recuperabili."
+            "value" : "Parti di questo file potrebbero condividere spazio APFS. macOS non fornisce a Vrac informazioni sufficienti per calcolare con esattezza i byte condivisi o recuperabili."
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Части этого файла могут совместно использовать хранилище APFS. macOS не предоставляет Radix достаточно данных, чтобы точно определить общий и освобождаемый объём."
+            "value" : "Части этого файла могут совместно использовать хранилище APFS. macOS не предоставляет Vrac достаточно данных, чтобы точно определить общий и освобождаемый объём."
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "此文件的部分内容可能共享 APFS 存储空间。macOS 未向 Radix 提供足够的信息，无法精确计算共享或可释放的字节数。"
+            "value" : "此文件的部分内容可能共享 APFS 存储空间。macOS 未向 Vrac 提供足够的信息，无法精确计算共享或可释放的字节数。"
           }
         }
       }
@@ -18809,913 +18809,913 @@
         }
       }
     },
-    "Radix" : {
+    "Vrac" : {
       "localizations" : {
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix"
+            "value" : "Vrac"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix"
+            "value" : "Vrac"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix"
+            "value" : "Vrac"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix"
+            "value" : "Vrac"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix"
+            "value" : "Vrac"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix"
+            "value" : "Vrac"
           }
         }
       }
     },
-    "Radix cannot compare snapshots right now." : {
+    "Vrac cannot compare snapshots right now." : {
       "comment" : "Fallback error shown when comparison is unavailable.",
       "localizations" : {
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix kann Snapshots derzeit nicht vergleichen."
+            "value" : "Vrac kann Snapshots derzeit nicht vergleichen."
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix no puede comparar instantáneas en este momento."
+            "value" : "Vrac no puede comparar instantáneas en este momento."
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix ne peut pas comparer les instantanés pour le moment."
+            "value" : "Vrac ne peut pas comparer les instantanés pour le moment."
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix non può confrontare le istantanee in questo momento."
+            "value" : "Vrac non può confrontare le istantanee in questo momento."
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Сейчас Radix не может сравнить снимки."
+            "value" : "Сейчас Vrac не может сравнить снимки."
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix 目前无法比较快照。"
+            "value" : "Vrac 目前无法比较快照。"
           }
         }
       }
     },
-    "Radix cannot import a snapshot right now." : {
+    "Vrac cannot import a snapshot right now." : {
       "comment" : "Fallback error shown when importing is unavailable.",
       "localizations" : {
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix kann derzeit keinen Snapshot importieren."
+            "value" : "Vrac kann derzeit keinen Snapshot importieren."
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix no puede importar una instantánea en este momento."
+            "value" : "Vrac no puede importar una instantánea en este momento."
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix ne peut pas importer un instantané pour le moment."
+            "value" : "Vrac ne peut pas importer un instantané pour le moment."
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix non può importare un'istantanea in questo momento."
+            "value" : "Vrac non può importare un'istantanea in questo momento."
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Сейчас Radix не может импортировать снимок."
+            "value" : "Сейчас Vrac не может импортировать снимок."
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix 目前无法导入快照。"
+            "value" : "Vrac 目前无法导入快照。"
           }
         }
       }
     },
-    "Radix could not create an FSEvents history stream." : {
+    "Vrac could not create an FSEvents history stream." : {
       "comment" : "Error shown when an FSEvents history stream cannot be created.",
       "localizations" : {
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix konnte keinen FSEvents-Verlaufsstream erstellen."
+            "value" : "Vrac konnte keinen FSEvents-Verlaufsstream erstellen."
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix no pudo crear un flujo del historial de FSEvents."
+            "value" : "Vrac no pudo crear un flujo del historial de FSEvents."
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix n’a pas pu créer un flux d’historique FSEvents."
+            "value" : "Vrac n’a pas pu créer un flux d’historique FSEvents."
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix non ha potuto creare un flusso della cronologia di FSEvents."
+            "value" : "Vrac non ha potuto creare un flusso della cronologia di FSEvents."
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix не удалось создать поток истории FSEvents."
+            "value" : "Vrac не удалось создать поток истории FSEvents."
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix 无法创建 FSEvents 历史记录流。"
+            "value" : "Vrac 无法创建 FSEvents 历史记录流。"
           }
         }
       }
     },
-    "Radix could not open Full Disk Access settings." : {
+    "Vrac could not open Full Disk Access settings." : {
       "comment" : "Error shown when System Settings cannot open Full Disk Access.",
       "localizations" : {
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix konnte die Einstellungen für den Festplattenvollzugriff nicht öffnen."
+            "value" : "Vrac konnte die Einstellungen für den Festplattenvollzugriff nicht öffnen."
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix no pudo abrir los ajustes de Acceso total al disco."
+            "value" : "Vrac no pudo abrir los ajustes de Acceso total al disco."
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix n’a pas pu ouvrir les réglages d’accès complet au disque."
+            "value" : "Vrac n’a pas pu ouvrir les réglages d’accès complet au disque."
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix non ha potuto aprire le impostazioni di Accesso completo al disco."
+            "value" : "Vrac non ha potuto aprire le impostazioni di Accesso completo al disco."
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix не удалось открыть настройки полного доступа к диску."
+            "value" : "Vrac не удалось открыть настройки полного доступа к диску."
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix 无法打开完全磁盘访问权限设置。"
+            "value" : "Vrac 无法打开完全磁盘访问权限设置。"
           }
         }
       }
     },
-    "Radix could not read the scan snapshot manifest: %@" : {
+    "Vrac could not read the scan snapshot manifest: %@" : {
       "comment" : "Error shown when an imported snapshot manifest cannot be read.",
       "localizations" : {
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix konnte das Manifest des Scan-Snapshots nicht lesen: %@"
+            "value" : "Vrac konnte das Manifest des Scan-Snapshots nicht lesen: %@"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix no pudo leer el manifiesto de la instantánea: %@"
+            "value" : "Vrac no pudo leer el manifiesto de la instantánea: %@"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix n’a pas pu lire le manifeste de l’instantané : %@"
+            "value" : "Vrac n’a pas pu lire le manifeste de l’instantané : %@"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix non ha potuto leggere il manifesto dell'istantanea di scansione: %@"
+            "value" : "Vrac non ha potuto leggere il manifesto dell'istantanea di scansione: %@"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix не удалось прочитать манифест снимка сканирования: %@"
+            "value" : "Vrac не удалось прочитать манифест снимка сканирования: %@"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix 无法读取扫描快照清单：%@"
+            "value" : "Vrac 无法读取扫描快照清单：%@"
           }
         }
       }
     },
-    "Radix could not read the scan snapshot node payload: %@" : {
+    "Vrac could not read the scan snapshot node payload: %@" : {
       "comment" : "Error shown when imported snapshot node data cannot be read.",
       "localizations" : {
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix konnte die Knotendaten des Scan-Snapshots nicht lesen: %@"
+            "value" : "Vrac konnte die Knotendaten des Scan-Snapshots nicht lesen: %@"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix no pudo leer los datos de nodos de la instantánea: %@"
+            "value" : "Vrac no pudo leer los datos de nodos de la instantánea: %@"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix n’a pas pu lire les données de nœuds de l’instantané : %@"
+            "value" : "Vrac n’a pas pu lire les données de nœuds de l’instantané : %@"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix non ha potuto leggere i dati del nodo dell'istantanea di scansione: %@"
+            "value" : "Vrac non ha potuto leggere i dati del nodo dell'istantanea di scansione: %@"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix не удалось прочитать данные узлов снимка сканирования: %@"
+            "value" : "Vrac не удалось прочитать данные узлов снимка сканирования: %@"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix 无法读取扫描快照节点数据：%@"
+            "value" : "Vrac 无法读取扫描快照节点数据：%@"
           }
         }
       }
     },
-    "Radix could not read the scan snapshot stats: %@" : {
+    "Vrac could not read the scan snapshot stats: %@" : {
       "comment" : "Error shown when imported snapshot statistics cannot be read.",
       "localizations" : {
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix konnte die Statistiken des Scan-Snapshots nicht lesen: %@"
+            "value" : "Vrac konnte die Statistiken des Scan-Snapshots nicht lesen: %@"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix no pudo leer las estadísticas de la instantánea: %@"
+            "value" : "Vrac no pudo leer las estadísticas de la instantánea: %@"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix n’a pas pu lire les statistiques de l’instantané : %@"
+            "value" : "Vrac n’a pas pu lire les statistiques de l’instantané : %@"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix non ha potuto leggere le statistiche dell'istantanea di scansione: %@"
+            "value" : "Vrac non ha potuto leggere le statistiche dell'istantanea di scansione: %@"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix не удалось прочитать статистику снимка сканирования: %@"
+            "value" : "Vrac не удалось прочитать статистику снимка сканирования: %@"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix 无法读取扫描快照统计信息：%@"
+            "value" : "Vrac 无法读取扫描快照统计信息：%@"
           }
         }
       }
     },
-    "Radix could not read the scan snapshot topology: %@" : {
+    "Vrac could not read the scan snapshot topology: %@" : {
       "comment" : "Error shown when imported snapshot tree topology cannot be read.",
       "localizations" : {
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix konnte die Topologie des Scan-Snapshots nicht lesen: %@"
+            "value" : "Vrac konnte die Topologie des Scan-Snapshots nicht lesen: %@"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix no pudo leer la topología de la instantánea: %@"
+            "value" : "Vrac no pudo leer la topología de la instantánea: %@"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix n’a pas pu lire la topologie de l’instantané : %@"
+            "value" : "Vrac n’a pas pu lire la topologie de l’instantané : %@"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix non ha potuto leggere la topologia dell'istantanea di scansione: %@"
+            "value" : "Vrac non ha potuto leggere la topologia dell'istantanea di scansione: %@"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix не удалось прочитать топологию снимка сканирования: %@"
+            "value" : "Vrac не удалось прочитать топологию снимка сканирования: %@"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix 无法读取扫描快照拓扑结构：%@"
+            "value" : "Vrac 无法读取扫描快照拓扑结构：%@"
           }
         }
       }
     },
-    "Radix could not start the FSEvents history stream." : {
+    "Vrac could not start the FSEvents history stream." : {
       "comment" : "Error shown when an FSEvents history stream cannot be started.",
       "localizations" : {
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix konnte den FSEvents-Verlaufsstream nicht starten."
+            "value" : "Vrac konnte den FSEvents-Verlaufsstream nicht starten."
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix no pudo iniciar el flujo del historial de FSEvents."
+            "value" : "Vrac no pudo iniciar el flujo del historial de FSEvents."
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix n’a pas pu démarrer le flux d’historique FSEvents."
+            "value" : "Vrac n’a pas pu démarrer le flux d’historique FSEvents."
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix non ha potuto avviare il flusso della cronologia di FSEvents."
+            "value" : "Vrac non ha potuto avviare il flusso della cronologia di FSEvents."
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix не удалось запустить поток истории FSEvents."
+            "value" : "Vrac не удалось запустить поток истории FSEvents."
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix 无法启动 FSEvents 历史记录流。"
+            "value" : "Vrac 无法启动 FSEvents 历史记录流。"
           }
         }
       }
     },
-    "Radix could not verify the current identity for %@: %@" : {
+    "Vrac could not verify the current identity for %@: %@" : {
       "comment" : "Safety error shown when the current file identity cannot be verified.",
       "localizations" : {
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix konnte die aktuelle Identität für %@ nicht überprüfen: %@"
+            "value" : "Vrac konnte die aktuelle Identität für %@ nicht überprüfen: %@"
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix could not verify the current identity for %1$@: %2$@"
+            "value" : "Vrac could not verify the current identity for %1$@: %2$@"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix no pudo verificar la identidad actual de %@: %@"
+            "value" : "Vrac no pudo verificar la identidad actual de %@: %@"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix n’a pas pu vérifier l’identité actuelle de %@ : %@"
+            "value" : "Vrac n’a pas pu vérifier l’identité actuelle de %@ : %@"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix non ha potuto verificare l'identità corrente per %1$@: %2$@"
+            "value" : "Vrac non ha potuto verificare l'identità corrente per %1$@: %2$@"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix не удалось проверить текущую идентичность %1$@: %2$@"
+            "value" : "Vrac не удалось проверить текущую идентичность %1$@: %2$@"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix 无法验证 %@ 的当前身份：%@"
+            "value" : "Vrac 无法验证 %@ 的当前身份：%@"
           }
         }
       }
     },
-    "Radix could not verify the scanned identity for %@. Rescan before moving it to Trash." : {
+    "Vrac could not verify the scanned identity for %@. Rescan before moving it to Trash." : {
       "comment" : "Safety error shown when a scanned file identity cannot be verified.",
       "localizations" : {
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix konnte die Identität des Scans für %@ nicht überprüfen. Scannen Sie erneut, bevor Sie das Element in den Papierkorb bewegen."
+            "value" : "Vrac konnte die Identität des Scans für %@ nicht überprüfen. Scannen Sie erneut, bevor Sie das Element in den Papierkorb bewegen."
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix no pudo verificar la identidad analizada de %@. Vuelve a analizarlo antes de moverlo a la papelera."
+            "value" : "Vrac no pudo verificar la identidad analizada de %@. Vuelve a analizarlo antes de moverlo a la papelera."
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix n’a pas pu vérifier l’identité analysée de %@. Réanalysez-le avant de le placer dans la corbeille."
+            "value" : "Vrac n’a pas pu vérifier l’identité analysée de %@. Réanalysez-le avant de le placer dans la corbeille."
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix non ha potuto verificare l'identità scansionata per %@. Esegui nuovamente la scansione prima di spostarlo nel Cestino."
+            "value" : "Vrac non ha potuto verificare l'identità scansionata per %@. Esegui nuovamente la scansione prima di spostarlo nel Cestino."
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix не удалось проверить идентичность %@, зафиксированную при сканировании. Выполните повторное сканирование перед перемещением в Корзину."
+            "value" : "Vrac не удалось проверить идентичность %@, зафиксированную при сканировании. Выполните повторное сканирование перед перемещением в Корзину."
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix 无法验证 %@ 的扫描身份。移到废纸篓前请重新扫描。"
+            "value" : "Vrac 无法验证 %@ 的扫描身份。移到废纸篓前请重新扫描。"
           }
         }
       }
     },
-    "Radix couldn’t safely apply the recent changes." : {
+    "Vrac couldn’t safely apply the recent changes." : {
       "localizations" : {
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix konnte die letzten Änderungen nicht sicher übernehmen."
+            "value" : "Vrac konnte die letzten Änderungen nicht sicher übernehmen."
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix no pudo aplicar de forma segura los cambios recientes."
+            "value" : "Vrac no pudo aplicar de forma segura los cambios recientes."
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix n’a pas pu appliquer les modifications récentes en toute sécurité."
+            "value" : "Vrac n’a pas pu appliquer les modifications récentes en toute sécurité."
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix non ha potuto applicare in modo sicuro le modifiche recenti."
+            "value" : "Vrac non ha potuto applicare in modo sicuro le modifiche recenti."
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix не удалось безопасно применить последние изменения."
+            "value" : "Vrac не удалось безопасно применить последние изменения."
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix 无法安全地应用最近的更改。"
+            "value" : "Vrac 无法安全地应用最近的更改。"
           }
         }
       }
     },
-    "Radix grouped this folder during the scan. Expand it to inspect individual items." : {
+    "Vrac grouped this folder during the scan. Expand it to inspect individual items." : {
       "comment" : "Inspector explanation for a summarized folder.",
       "localizations" : {
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix hat diesen Ordner beim Scan zusammengefasst. Erweitern Sie ihn, um einzelne Elemente zu prüfen."
+            "value" : "Vrac hat diesen Ordner beim Scan zusammengefasst. Erweitern Sie ihn, um einzelne Elemente zu prüfen."
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix agrupó esta carpeta durante el análisis. Expándela para inspeccionar los elementos individuales."
+            "value" : "Vrac agrupó esta carpeta durante el análisis. Expándela para inspeccionar los elementos individuales."
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix a regroupé ce dossier pendant l’analyse. Développez-le pour inspecter les éléments individuellement."
+            "value" : "Vrac a regroupé ce dossier pendant l’analyse. Développez-le pour inspecter les éléments individuellement."
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix ha raggruppato questa cartella durante la scansione. Espandila per esaminare i singoli elementi."
+            "value" : "Vrac ha raggruppato questa cartella durante la scansione. Espandila per esaminare i singoli elementi."
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Во время сканирования Radix сгруппировал содержимое этой папки. Разверните её, чтобы просмотреть отдельные объекты."
+            "value" : "Во время сканирования Vrac сгруппировал содержимое этой папки. Разверните её, чтобы просмотреть отдельные объекты."
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix 在扫描期间汇总了此文件夹。展开它即可检查各个项目。"
+            "value" : "Vrac 在扫描期间汇总了此文件夹。展开它即可检查各个项目。"
           }
         }
       }
     },
-    "Radix is scanning the entire location to ensure accurate results." : {
+    "Vrac is scanning the entire location to ensure accurate results." : {
       "localizations" : {
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix scannt den gesamten Speicherort, um genaue Ergebnisse zu gewährleisten."
+            "value" : "Vrac scannt den gesamten Speicherort, um genaue Ergebnisse zu gewährleisten."
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix está analizando toda la ubicación para garantizar resultados precisos."
+            "value" : "Vrac está analizando toda la ubicación para garantizar resultados precisos."
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix analyse l’emplacement entier afin de garantir des résultats exacts."
+            "value" : "Vrac analyse l’emplacement entier afin de garantir des résultats exacts."
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix sta analizzando l’intera posizione per garantire risultati accurati."
+            "value" : "Vrac sta analizzando l’intera posizione per garantire risultati accurati."
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix сканирует всё расположение, чтобы обеспечить точность результатов."
+            "value" : "Vrac сканирует всё расположение, чтобы обеспечить точность результатов."
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix 正在扫描整个位置，以确保结果准确。"
+            "value" : "Vrac 正在扫描整个位置，以确保结果准确。"
           }
         }
       }
     },
-    "Radix Scan" : {
+    "Vrac Scan" : {
       "comment" : "Fallback filename for an exported scan.",
       "localizations" : {
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix-Scan"
+            "value" : "Vrac-Scan"
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix Scan"
+            "value" : "Vrac Scan"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Análisis de Radix"
+            "value" : "Análisis de Vrac"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Analyse Radix"
+            "value" : "Analyse Vrac"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Scansione Radix"
+            "value" : "Scansione Vrac"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Сканирование Radix"
+            "value" : "Сканирование Vrac"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix 扫描"
+            "value" : "Vrac 扫描"
           }
         }
       }
     },
-    "Radix scan snapshot integrity check failed: %@" : {
+    "Vrac scan snapshot integrity check failed: %@" : {
       "comment" : "Error shown when an imported snapshot fails its integrity check.",
       "localizations" : {
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Die Integritätsprüfung des Radix-Scan-Snapshots ist fehlgeschlagen: %@"
+            "value" : "Die Integritätsprüfung des Vrac-Scan-Snapshots ist fehlgeschlagen: %@"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "La comprobación de integridad de la instantánea de Radix falló: %@"
+            "value" : "La comprobación de integridad de la instantánea de Vrac falló: %@"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "La vérification d’intégrité de l’instantané Radix a échoué : %@"
+            "value" : "La vérification d’intégrité de l’instantané Vrac a échoué : %@"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Controllo di integrità dell'istantanea di scansione di Radix fallito: %@"
+            "value" : "Controllo di integrità dell'istantanea di scansione di Vrac fallito: %@"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Проверка целостности снимка сканирования Radix не пройдена: %@"
+            "value" : "Проверка целостности снимка сканирования Vrac не пройдена: %@"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix 扫描快照完整性检查失败：%@"
+            "value" : "Vrac 扫描快照完整性检查失败：%@"
           }
         }
       }
     },
-    "Radix scanned the entire location." : {
+    "Vrac scanned the entire location." : {
       "comment" : "Result shown after an incremental rescan safely completed as a full scan.",
       "localizations" : {
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix hat den gesamten Speicherort gescannt."
+            "value" : "Vrac hat den gesamten Speicherort gescannt."
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix analizó toda la ubicación."
+            "value" : "Vrac analizó toda la ubicación."
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix a analysé l’emplacement entier."
+            "value" : "Vrac a analysé l’emplacement entier."
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix ha analizzato l’intera posizione."
+            "value" : "Vrac ha analizzato l’intera posizione."
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix просканировал всё расположение."
+            "value" : "Vrac просканировал всё расположение."
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix 已扫描整个位置。"
+            "value" : "Vrac 已扫描整个位置。"
           }
         }
       }
     },
-    "Radix scanned this package as a single item. To zoom into it, turn on “Expand packages” in Settings, then rescan this location." : {
+    "Vrac scanned this package as a single item. To zoom into it, turn on “Expand packages” in Settings, then rescan this location." : {
       "comment" : "Error explaining how to enable package expansion before zooming into a package.",
       "localizations" : {
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix hat dieses Paket als einzelnes Element gescannt. Aktivieren Sie in den Einstellungen „Pakete aufklappen“ und scannen Sie diesen Speicherort erneut, um den Inhalt anzuzeigen."
+            "value" : "Vrac hat dieses Paket als einzelnes Element gescannt. Aktivieren Sie in den Einstellungen „Pakete aufklappen“ und scannen Sie diesen Speicherort erneut, um den Inhalt anzuzeigen."
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix scanned this package as a single item. To zoom into it, turn on “Expand packages” in Settings, then rescan this location."
+            "value" : "Vrac scanned this package as a single item. To zoom into it, turn on “Expand packages” in Settings, then rescan this location."
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix analizó este paquete como un único elemento. Para ver su contenido, activa «Expandir paquetes» en Ajustes y vuelve a analizar esta ubicación."
+            "value" : "Vrac analizó este paquete como un único elemento. Para ver su contenido, activa «Expandir paquetes» en Ajustes y vuelve a analizar esta ubicación."
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix a analysé ce paquet comme un seul élément. Pour afficher son contenu, activez « Développer les paquets » dans Réglages, puis réanalysez cet emplacement."
+            "value" : "Vrac a analysé ce paquet comme un seul élément. Pour afficher son contenu, activez « Développer les paquets » dans Réglages, puis réanalysez cet emplacement."
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix ha scansionato questo pacchetto come un singolo elemento. Per visualizzarne il contenuto, attiva “Espandi pacchetti” nelle Impostazioni, quindi esegui nuovamente la scansione di questa posizione."
+            "value" : "Vrac ha scansionato questo pacchetto come un singolo elemento. Per visualizzarne il contenuto, attiva “Espandi pacchetti” nelle Impostazioni, quindi esegui nuovamente la scansione di questa posizione."
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix просканировал этот пакет как единый объект. Чтобы открыть его содержимое на карте, включите «Разворачивать пакеты» в настройках и повторно просканируйте это расположение."
+            "value" : "Vrac просканировал этот пакет как единый объект. Чтобы открыть его содержимое на карте, включите «Разворачивать пакеты» в настройках и повторно просканируйте это расположение."
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix 将此软件包作为单个项目扫描。若要查看其内容，请在“设置”中打开“展开软件包”，然后重新扫描此位置。"
+            "value" : "Vrac 将此软件包作为单个项目扫描。若要查看其内容，请在“设置”中打开“展开软件包”，然后重新扫描此位置。"
           }
         }
       }
     },
-    "Radix scanned this package before package contents were expanded. Rescan this location to zoom into it." : {
+    "Vrac scanned this package before package contents were expanded. Rescan this location to zoom into it." : {
       "comment" : "Error shown when a package needs to be rescanned after enabling package expansion.",
       "localizations" : {
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix hat dieses Paket gescannt, bevor sein Inhalt erweitert wurde. Scannen Sie diesen Standort erneut, um den Inhalt zu vergrößern."
+            "value" : "Vrac hat dieses Paket gescannt, bevor sein Inhalt erweitert wurde. Scannen Sie diesen Standort erneut, um den Inhalt zu vergrößern."
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix analizó este paquete antes de expandir su contenido. Vuelve a analizar esta ubicación para acercarte."
+            "value" : "Vrac analizó este paquete antes de expandir su contenido. Vuelve a analizar esta ubicación para acercarte."
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix a analysé ce paquet avant d’en développer le contenu. Réanalysez cet emplacement pour zoomer dessus."
+            "value" : "Vrac a analysé ce paquet avant d’en développer le contenu. Réanalysez cet emplacement pour zoomer dessus."
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix ha scansionato questo pacchetto prima che il contenuto del pacchetto venisse espanso. Esegui nuovamente la scansione di questa posizione per ingrandirlo."
+            "value" : "Vrac ha scansionato questo pacchetto prima che il contenuto del pacchetto venisse espanso. Esegui nuovamente la scansione di questa posizione per ingrandirlo."
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix просканировал этот пакет до включения разворачивания содержимого. Повторно просканируйте это расположение, чтобы открыть пакет на карте."
+            "value" : "Vrac просканировал этот пакет до включения разворачивания содержимого. Повторно просканируйте это расположение, чтобы открыть пакет на карте."
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix 在展开软件包内容前扫描了此软件包。请重新扫描此位置以缩放查看。"
+            "value" : "Vrac 在展开软件包内容前扫描了此软件包。请重新扫描此位置以缩放查看。"
           }
         }
       }
     },
-    "Radix will ask macOS to move %@ to the Trash." : {
+    "Vrac will ask macOS to move %@ to the Trash." : {
       "comment" : "Confirmation message for moving one selected item to the Trash.",
       "localizations" : {
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix wird macOS auffordern, %@ in den Papierkorb zu bewegen."
+            "value" : "Vrac wird macOS auffordern, %@ in den Papierkorb zu bewegen."
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix pedirá a macOS que mueva %@ a la papelera."
+            "value" : "Vrac pedirá a macOS que mueva %@ a la papelera."
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix demandera à macOS de placer %@ dans la corbeille."
+            "value" : "Vrac demandera à macOS de placer %@ dans la corbeille."
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix chiederà a macOS di spostare %@ nel Cestino."
+            "value" : "Vrac chiederà a macOS di spostare %@ nel Cestino."
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix попросит macOS переместить %@ в Корзину."
+            "value" : "Vrac попросит macOS переместить %@ в Корзину."
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix 将请求 macOS 将 %@ 移到废纸篓。"
+            "value" : "Vrac 将请求 macOS 将 %@ 移到废纸篓。"
           }
         }
       }
     },
-    "Radix will ask macOS to move %lld selected items to the Trash:\n%@%@" : {
+    "Vrac will ask macOS to move %lld selected items to the Trash:\n%@%@" : {
       "comment" : "Confirmation message listing multiple selected items that will be moved to the Trash.",
       "localizations" : {
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix wird macOS auffordern, die %lld ausgewählten Elemente in den Papierkorb zu bewegen:\n%@%@"
+            "value" : "Vrac wird macOS auffordern, die %lld ausgewählten Elemente in den Papierkorb zu bewegen:\n%@%@"
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix will ask macOS to move %1$lld selected items to the Trash:\n%2$@%3$@"
+            "value" : "Vrac will ask macOS to move %1$lld selected items to the Trash:\n%2$@%3$@"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix pedirá a macOS que mueva %lld elementos seleccionados a la papelera:\n%@%@"
+            "value" : "Vrac pedirá a macOS que mueva %lld elementos seleccionados a la papelera:\n%@%@"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix demandera à macOS de placer %lld éléments sélectionnés dans la corbeille :\n%@%@"
+            "value" : "Vrac demandera à macOS de placer %lld éléments sélectionnés dans la corbeille :\n%@%@"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix chiederà a macOS di spostare %1$lld elementi selezionati nel Cestino:\n%2$@%3$@"
+            "value" : "Vrac chiederà a macOS di spostare %1$lld elementi selezionati nel Cestino:\n%2$@%3$@"
           }
         },
         "ru" : {
@@ -19724,25 +19724,25 @@
               "few" : {
                 "stringUnit" : {
                   "state" : "translated",
-                  "value" : "Radix попросит macOS переместить %1$lld выбранных объекта в Корзину:\n%2$@%3$@"
+                  "value" : "Vrac попросит macOS переместить %1$lld выбранных объекта в Корзину:\n%2$@%3$@"
                 }
               },
               "many" : {
                 "stringUnit" : {
                   "state" : "translated",
-                  "value" : "Radix попросит macOS переместить %1$lld выбранных объектов в Корзину:\n%2$@%3$@"
+                  "value" : "Vrac попросит macOS переместить %1$lld выбранных объектов в Корзину:\n%2$@%3$@"
                 }
               },
               "one" : {
                 "stringUnit" : {
                   "state" : "translated",
-                  "value" : "Radix попросит macOS переместить %1$lld выбранный объект в Корзину:\n%2$@%3$@"
+                  "value" : "Vrac попросит macOS переместить %1$lld выбранный объект в Корзину:\n%2$@%3$@"
                 }
               },
               "other" : {
                 "stringUnit" : {
                   "state" : "translated",
-                  "value" : "Radix попросит macOS переместить %1$lld выбранных объекта в Корзину:\n%2$@%3$@"
+                  "value" : "Vrac попросит macOS переместить %1$lld выбранных объекта в Корзину:\n%2$@%3$@"
                 }
               }
             }
@@ -19751,48 +19751,48 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix 将请求 macOS 将 %lld 个所选项目移到废纸篓：\n%@%@"
+            "value" : "Vrac 将请求 macOS 将 %lld 个所选项目移到废纸篓：\n%@%@"
           }
         }
       }
     },
-    "Radix will not move the protected location at %@ to the Trash." : {
+    "Vrac will not move the protected location at %@ to the Trash." : {
       "comment" : "Safety error shown when a protected scan root is selected for deletion.",
       "localizations" : {
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix wird den geschützten Standort unter %@ nicht in den Papierkorb bewegen."
+            "value" : "Vrac wird den geschützten Standort unter %@ nicht in den Papierkorb bewegen."
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix no moverá la ubicación protegida de %@ a la papelera."
+            "value" : "Vrac no moverá la ubicación protegida de %@ a la papelera."
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix ne placera pas l’emplacement protégé de %@ dans la corbeille."
+            "value" : "Vrac ne placera pas l’emplacement protégé de %@ dans la corbeille."
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix non sposterà la posizione protetta in %@ nel Cestino."
+            "value" : "Vrac non sposterà la posizione protetta in %@ nel Cestino."
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix не будет перемещать защищённое расположение %@ в Корзину."
+            "value" : "Vrac не будет перемещать защищённое расположение %@ в Корзину."
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix 不会将 %@ 处的受保护位置移到废纸篓。"
+            "value" : "Vrac 不会将 %@ 处的受保护位置移到废纸篓。"
           }
         }
       }
@@ -25568,43 +25568,43 @@
         }
       }
     },
-    "Some selected files may share APFS storage. Allocated totals reflect Radix’s storage attribution and may differ from the space reclaimed by deletion." : {
+    "Some selected files may share APFS storage. Allocated totals reflect Vrac’s storage attribution and may differ from the space reclaimed by deletion." : {
       "comment" : "Inspector explanation for a multiple selection containing files with shared APFS storage.",
       "localizations" : {
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Einige ausgewählte Dateien nutzen möglicherweise gemeinsam APFS-Speicher. Die Summen für „Zugewiesen“ basieren auf der Speicherzuordnung von Radix und können vom durch Löschen freigegebenen Speicherplatz abweichen."
+            "value" : "Einige ausgewählte Dateien nutzen möglicherweise gemeinsam APFS-Speicher. Die Summen für „Zugewiesen“ basieren auf der Speicherzuordnung von Vrac und können vom durch Löschen freigegebenen Speicherplatz abweichen."
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Es posible que algunos archivos seleccionados compartan almacenamiento APFS. Los totales asignados reflejan la atribución de almacenamiento de Radix y pueden diferir del espacio recuperado al eliminarlos."
+            "value" : "Es posible que algunos archivos seleccionados compartan almacenamiento APFS. Los totales asignados reflejan la atribución de almacenamiento de Vrac y pueden diferir del espacio recuperado al eliminarlos."
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Certains fichiers sélectionnés peuvent partager du stockage APFS. Les totaux alloués reflètent l’attribution du stockage par Radix et peuvent différer de l’espace récupéré après suppression."
+            "value" : "Certains fichiers sélectionnés peuvent partager du stockage APFS. Les totaux alloués reflètent l’attribution du stockage par Vrac et peuvent différer de l’espace récupéré après suppression."
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Alcuni file selezionati potrebbero condividere spazio APFS. I totali allocati riflettono l’attribuzione dello spazio di Radix e potrebbero differire dallo spazio recuperato con l’eliminazione."
+            "value" : "Alcuni file selezionati potrebbero condividere spazio APFS. I totali allocati riflettono l’attribuzione dello spazio di Vrac e potrebbero differire dallo spazio recuperato con l’eliminazione."
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Некоторые выбранные файлы могут совместно использовать хранилище APFS. Итоговое занятое место отражает способ учёта Radix и может отличаться от объёма, который фактически освободится после удаления."
+            "value" : "Некоторые выбранные файлы могут совместно использовать хранилище APFS. Итоговое занятое место отражает способ учёта Vrac и может отличаться от объёма, который фактически освободится после удаления."
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "部分所选文件可能共享 APFS 存储空间。“已分配”总计反映 Radix 的存储归属计算，可能与删除后释放的空间不同。"
+            "value" : "部分所选文件可能共享 APFS 存储空间。“已分配”总计反映 Vrac 的存储归属计算，可能与删除后释放的空间不同。"
           }
         }
       }
@@ -27576,43 +27576,43 @@
         }
       }
     },
-    "The Radix scan snapshot package is invalid: %@" : {
+    "The Vrac scan snapshot package is invalid: %@" : {
       "comment" : "Error shown when an imported snapshot package is malformed.",
       "localizations" : {
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Das Radix-Scan-Snapshot-Paket ist ungültig: %@"
+            "value" : "Das Vrac-Scan-Snapshot-Paket ist ungültig: %@"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "El paquete de instantánea de análisis de Radix no es válido: %@"
+            "value" : "El paquete de instantánea de análisis de Vrac no es válido: %@"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Le paquet d’instantané d’analyse Radix est invalide : %@"
+            "value" : "Le paquet d’instantané d’analyse Vrac est invalide : %@"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Il pacchetto dell'istantanea di scansione di Radix non è valido: %@"
+            "value" : "Il pacchetto dell'istantanea di scansione di Vrac non è valido: %@"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Пакет снимка сканирования Radix недопустим: %@"
+            "value" : "Пакет снимка сканирования Vrac недопустим: %@"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix 扫描快照软件包无效：%@"
+            "value" : "Vrac 扫描快照软件包无效：%@"
           }
         }
       }
@@ -27699,42 +27699,42 @@
         }
       }
     },
-    "The scan location changed while Radix was checking it." : {
+    "The scan location changed while Vrac was checking it." : {
       "localizations" : {
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Der Scanort hat sich geändert, während Radix ihn geprüft hat."
+            "value" : "Der Scanort hat sich geändert, während Vrac ihn geprüft hat."
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "La ubicación del análisis cambió mientras Radix la comprobaba."
+            "value" : "La ubicación del análisis cambió mientras Vrac la comprobaba."
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "L’emplacement d’analyse a changé pendant que Radix le vérifiait."
+            "value" : "L’emplacement d’analyse a changé pendant que Vrac le vérifiait."
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "La posizione della scansione è cambiata mentre Radix la controllava."
+            "value" : "La posizione della scansione è cambiata mentre Vrac la controllava."
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Расположение сканирования изменилось во время проверки Radix."
+            "value" : "Расположение сканирования изменилось во время проверки Vrac."
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix 检查扫描位置时，该位置发生了变化。"
+            "value" : "Vrac 检查扫描位置时，该位置发生了变化。"
           }
         }
       }
@@ -27985,49 +27985,49 @@
         }
       }
     },
-    "These sample files were created for the Radix tour." : {
+    "These sample files were created for the Vrac tour." : {
       "extractionState" : "manual",
       "localizations" : {
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Diese Beispieldateien wurden für die Radix-Tour erstellt."
+            "value" : "Diese Beispieldateien wurden für die Vrac-Tour erstellt."
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "These sample files were created for the Radix tour."
+            "value" : "These sample files were created for the Vrac tour."
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Estos archivos de ejemplo se han creado para la visita de Radix."
+            "value" : "Estos archivos de ejemplo se han creado para la visita de Vrac."
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ces fichiers d’exemple ont été créés pour la visite guidée de Radix."
+            "value" : "Ces fichiers d’exemple ont été créés pour la visite guidée de Vrac."
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Questi file di esempio sono stati creati per il tour di Radix."
+            "value" : "Questi file di esempio sono stati creati per il tour di Vrac."
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Эти тестовые файлы созданы для обзора Radix."
+            "value" : "Эти тестовые файлы созданы для обзора Vrac."
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "这些示例文件是为 Radix 导览创建的。"
+            "value" : "这些示例文件是为 Vrac 导览创建的。"
           }
         }
       }
@@ -29110,84 +29110,84 @@
         }
       }
     },
-    "Unsupported Radix scan snapshot format: %@." : {
+    "Unsupported Vrac scan snapshot format: %@." : {
       "comment" : "Error shown when an imported snapshot uses an unknown format.",
       "localizations" : {
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Nicht unterstütztes Radix-Scan-Snapshot-Format: %@."
+            "value" : "Nicht unterstütztes Vrac-Scan-Snapshot-Format: %@."
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Formato de instantánea de análisis de Radix no compatible: %@."
+            "value" : "Formato de instantánea de análisis de Vrac no compatible: %@."
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Format d’instantané d’analyse Radix non pris en charge : %@."
+            "value" : "Format d’instantané d’analyse Vrac non pris en charge : %@."
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Formato dell'istantanea di scansione di Radix non supportato: %@."
+            "value" : "Formato dell'istantanea di scansione di Vrac non supportato: %@."
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Неподдерживаемый формат снимка сканирования Radix: %@."
+            "value" : "Неподдерживаемый формат снимка сканирования Vrac: %@."
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "不支持的 Radix 扫描快照格式：%@。"
+            "value" : "不支持的 Vrac 扫描快照格式：%@。"
           }
         }
       }
     },
-    "Unsupported Radix scan snapshot version: %lld." : {
+    "Unsupported Vrac scan snapshot version: %lld." : {
       "comment" : "Error shown when an imported snapshot uses an unsupported version.",
       "localizations" : {
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Nicht unterstützte Version des Radix-Scan-Snapshots: %lld."
+            "value" : "Nicht unterstützte Version des Vrac-Scan-Snapshots: %lld."
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Versión de instantánea de análisis de Radix no compatible: %lld."
+            "value" : "Versión de instantánea de análisis de Vrac no compatible: %lld."
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Version d’instantané d’analyse Radix non prise en charge : %lld."
+            "value" : "Version d’instantané d’analyse Vrac non prise en charge : %lld."
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Versione dell'istantanea di scansione di Radix non supportata: %lld."
+            "value" : "Versione dell'istantanea di scansione di Vrac non supportata: %lld."
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Неподдерживаемая версия снимка сканирования Radix: %lld."
+            "value" : "Неподдерживаемая версия снимка сканирования Vrac: %lld."
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "不支持的 Radix 扫描快照版本：%lld。"
+            "value" : "不支持的 Vrac 扫描快照版本：%lld。"
           }
         }
       }
@@ -29935,42 +29935,42 @@
         }
       }
     },
-    "Why Radix is performing a complete scan" : {
+    "Why Vrac is performing a complete scan" : {
       "localizations" : {
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Warum Radix einen vollständigen Scan durchführt"
+            "value" : "Warum Vrac einen vollständigen Scan durchführt"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Por qué Radix está realizando un análisis completo"
+            "value" : "Por qué Vrac está realizando un análisis completo"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Pourquoi Radix effectue une analyse complète"
+            "value" : "Pourquoi Vrac effectue une analyse complète"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Perché Radix sta eseguendo una scansione completa"
+            "value" : "Perché Vrac sta eseguendo una scansione completa"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Почему Radix выполняет полное сканирование"
+            "value" : "Почему Vrac выполняет полное сканирование"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Radix 为什么要进行完整扫描"
+            "value" : "Vrac 为什么要进行完整扫描"
           }
         }
       }

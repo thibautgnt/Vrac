@@ -213,28 +213,28 @@ nonisolated enum ScanArchiveError: LocalizedError, Equatable {
         case .incompleteSnapshot:
             return String(localized: "Only complete scans can be exported.", comment: "Error shown when exporting a scan that is still in progress.")
         case .invalidArchivePackage(let detail):
-            return String(localized: "The Radix scan snapshot package is invalid: \(detail)", comment: "Error shown when an imported snapshot package is malformed.")
+            return String(localized: "The Vrac scan snapshot package is invalid: \(detail)", comment: "Error shown when an imported snapshot package is malformed.")
         case .unsupportedFormat(let format):
-            return String(localized: "Unsupported Radix scan snapshot format: \(format).", comment: "Error shown when an imported snapshot uses an unknown format.")
+            return String(localized: "Unsupported Vrac scan snapshot format: \(format).", comment: "Error shown when an imported snapshot uses an unknown format.")
         case .unsupportedVersion(let version):
-            return String(localized: "Unsupported Radix scan snapshot version: \(version).", comment: "Error shown when an imported snapshot uses an unsupported version.")
+            return String(localized: "Unsupported Vrac scan snapshot version: \(version).", comment: "Error shown when an imported snapshot uses an unsupported version.")
         case .manifest(let detail):
-            return String(localized: "Radix could not read the scan snapshot manifest: \(detail)", comment: "Error shown when an imported snapshot manifest cannot be read.")
+            return String(localized: "Vrac could not read the scan snapshot manifest: \(detail)", comment: "Error shown when an imported snapshot manifest cannot be read.")
         case .nodes(let detail):
-            return String(localized: "Radix could not read the scan snapshot node payload: \(detail)", comment: "Error shown when imported snapshot node data cannot be read.")
+            return String(localized: "Vrac could not read the scan snapshot node payload: \(detail)", comment: "Error shown when imported snapshot node data cannot be read.")
         case .topology(let detail):
-            return String(localized: "Radix could not read the scan snapshot topology: \(detail)", comment: "Error shown when imported snapshot tree topology cannot be read.")
+            return String(localized: "Vrac could not read the scan snapshot topology: \(detail)", comment: "Error shown when imported snapshot tree topology cannot be read.")
         case .integrity(let detail):
-            return String(localized: "Radix scan snapshot integrity check failed: \(detail)", comment: "Error shown when an imported snapshot fails its integrity check.")
+            return String(localized: "Vrac scan snapshot integrity check failed: \(detail)", comment: "Error shown when an imported snapshot fails its integrity check.")
         case .stats(let detail):
-            return String(localized: "Radix could not read the scan snapshot stats: \(detail)", comment: "Error shown when imported snapshot statistics cannot be read.")
+            return String(localized: "Vrac could not read the scan snapshot stats: \(detail)", comment: "Error shown when imported snapshot statistics cannot be read.")
         }
     }
 }
 
 nonisolated struct ScanArchiveService: ScanArchiveServicing {
-    nonisolated static let fileExtension = "radixscan"
-    nonisolated static let formatIdentifier = "dev.colinkim.radix.scan"
+    nonisolated static let fileExtension = "vracscan"
+    nonisolated static let formatIdentifier = "fr.thibz.vrac.scan"
     nonisolated static let currentFormatVersion = 5
     private nonisolated static let oldestSupportedFormatVersion = 3
 
@@ -1049,7 +1049,7 @@ nonisolated struct ScanArchiveService: ScanArchiveServicing {
     private static func repairedStatsWarning(rootID: String) -> ScanWarning {
         ScanWarning(
             path: rootID,
-            message: String(localized: "Archive stats did not match node payload. Radix repaired totals during import.", comment: "Warning shown when imported archive statistics are repaired."),
+            message: String(localized: "Archive stats did not match node payload. Vrac repaired totals during import.", comment: "Warning shown when imported archive statistics are repaired."),
             category: .fileSystem
         )
     }

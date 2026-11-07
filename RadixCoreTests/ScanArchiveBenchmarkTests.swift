@@ -537,7 +537,7 @@ struct ScanArchiveBenchmarkTests {
                 path: "radix-archive-bench-\(caseName)-\(iteration)-\(UUID().uuidString)", directoryHint: .isDirectory)
         try FileManager.default.createDirectory(at: directoryURL, withIntermediateDirectories: true)
         temporaryFiles.track(directoryURL)
-        return directoryURL.appending(path: "Export.radixscan", directoryHint: .isDirectory)
+        return directoryURL.appending(path: "Export.vracscan", directoryHint: .isDirectory)
     }
 
     private static func directoryLogicalSize(_ directoryURL: URL) throws -> UInt64 {

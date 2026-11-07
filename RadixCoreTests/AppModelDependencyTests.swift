@@ -2626,7 +2626,7 @@ struct AppModelDependencyTests {
 
     @Test
     func testImportScanSnapshotRestoresReadOnlyImportedSnapshot() async throws {
-        let archiveURL = URL(filePath: "/tmp/imported.radixscan", directoryHint: .isDirectory)
+        let archiveURL = URL(filePath: "/tmp/imported.vracscan", directoryHint: .isDirectory)
         let file = makeTestFileNode(id: "/imported/file.txt", name: "file.txt")
         let root = makeTestDirectoryNode(id: "/imported", name: "imported", children: [file])
         let store = FileTreeStore(root: root, childrenByID: [root.id: [file]])
@@ -2709,7 +2709,7 @@ struct AppModelDependencyTests {
 
     @Test
     func testImportPreviewDisablesStartingAnotherImport() async throws {
-        let archiveURL = URL(filePath: "/tmp/import-preview.radixscan", directoryHint: .isDirectory)
+        let archiveURL = URL(filePath: "/tmp/import-preview.vracscan", directoryHint: .isDirectory)
         let file = makeTestFileNode(id: "/import-preview/file.txt", name: "file.txt")
         let root = makeTestDirectoryNode(id: "/import-preview", name: "import-preview", children: [file])
         let store = FileTreeStore(root: root, childrenByID: [root.id: [file]])
@@ -2767,7 +2767,7 @@ struct AppModelDependencyTests {
 
     @Test
     func testImportScanSnapshotDefersWideRootTableMaterializationUntilAfterSnapshotPublish() async throws {
-        let archiveURL = URL(filePath: "/tmp/wide-imported.radixscan", directoryHint: .isDirectory)
+        let archiveURL = URL(filePath: "/tmp/wide-imported.vracscan", directoryHint: .isDirectory)
         let childCount = 20_000
         let children = (0..<childCount).map { index in
             makeTestFileNode(
@@ -2864,14 +2864,14 @@ struct AppModelDependencyTests {
             model.scanState.isScanning
         }
 
-        model.importScanSnapshot(from: URL(filePath: "/tmp/opened.radixscan", directoryHint: .isDirectory))
+        model.importScanSnapshot(from: URL(filePath: "/tmp/opened.vracscan", directoryHint: .isDirectory))
 
         #expect(model.lastErrorMessage == "Stop the current scan before importing a snapshot.")
     }
 
     @Test
     func testExportCurrentScanUsesInjectedPanelAndArchiveService() async throws {
-        let archiveURL = URL(filePath: "/tmp/export.radixscan", directoryHint: .isDirectory)
+        let archiveURL = URL(filePath: "/tmp/export.vracscan", directoryHint: .isDirectory)
         let archiveService = SpyScanArchiveService()
         let recorder = AppModelActionRecorder()
         var requestedDefaultFileNames: [String] = []
@@ -2907,7 +2907,7 @@ struct AppModelDependencyTests {
         #expect(exportRequests.map(\.pathMode) == [.absolute])
         #expect(requestedDefaultFileNames.count == 1)
         #expect(requestedDefaultFileNames[0].hasPrefix("Export "))
-        #expect(!(requestedDefaultFileNames[0].hasSuffix(".radixscan")))
+        #expect(!(requestedDefaultFileNames[0].hasSuffix(".vracscan")))
         #expect(model.lastErrorMessage == nil)
         try await waitUntil("export confirmation presented") {
             model.exportConfirmation?.archiveURL == archiveURL
@@ -2921,8 +2921,8 @@ struct AppModelDependencyTests {
 
     @Test
     func testSupersededExportPanelCannotClearOrOutliveRestartedRequest() async throws {
-        let staleURL = URL(filePath: "/tmp/stale-export.radixscan", directoryHint: .isDirectory)
-        let currentURL = URL(filePath: "/tmp/current-export.radixscan", directoryHint: .isDirectory)
+        let staleURL = URL(filePath: "/tmp/stale-export.vracscan", directoryHint: .isDirectory)
+        let currentURL = URL(filePath: "/tmp/current-export.vracscan", directoryHint: .isDirectory)
         let firstPanel = AsyncValueProbe<URL?>()
         let secondPanel = AsyncValueProbe<URL?>()
         let archiveService = SpyScanArchiveService()
@@ -3006,7 +3006,7 @@ struct AppModelDependencyTests {
 
     @Test
     func testExportShowsCancellableArchiveOperationWithoutClearingSnapshot() async throws {
-        let archiveURL = URL(filePath: "/tmp/export-blocked.radixscan", directoryHint: .isDirectory)
+        let archiveURL = URL(filePath: "/tmp/export-blocked.vracscan", directoryHint: .isDirectory)
         let exportProbe = AsyncValueProbe<Void>()
         let archiveService = SpyScanArchiveService(exportWaitProbe: exportProbe)
         var actions = AppSystemActions.inert
@@ -3047,7 +3047,7 @@ struct AppModelDependencyTests {
 
     @Test
     func testCancelArchiveOperationCancelsExportWork() async throws {
-        let archiveURL = URL(filePath: "/tmp/export-cancelled.radixscan", directoryHint: .isDirectory)
+        let archiveURL = URL(filePath: "/tmp/export-cancelled.vracscan", directoryHint: .isDirectory)
         let exportProbe = AsyncValueProbe<Void>()
         let archiveService = SpyScanArchiveService(exportWaitProbe: exportProbe)
         var actions = AppSystemActions.inert
@@ -3083,7 +3083,7 @@ struct AppModelDependencyTests {
 
     @Test
     func testCancelArchiveOperationCancelsImportPreviewWork() async throws {
-        let archiveURL = URL(filePath: "/tmp/preview-cancelled.radixscan", directoryHint: .isDirectory)
+        let archiveURL = URL(filePath: "/tmp/preview-cancelled.vracscan", directoryHint: .isDirectory)
         let previewProbe = AsyncValueProbe<Void>()
         let archiveService = SpyScanArchiveService(previewWaitProbe: previewProbe)
         var actions = AppSystemActions.inert
@@ -3108,7 +3108,7 @@ struct AppModelDependencyTests {
 
     @Test
     func testDocumentOpenWaitsUntilOnboardingDismissesBeforeReadingArchive() async throws {
-        let archiveURL = URL(filePath: "/tmp/onboarding-open.radixscan", directoryHint: .isDirectory)
+        let archiveURL = URL(filePath: "/tmp/onboarding-open.vracscan", directoryHint: .isDirectory)
         let previewProbe = AsyncValueProbe<Void>()
         let archiveService = SpyScanArchiveService(previewWaitProbe: previewProbe)
         let model = AppModel(dependencies: makeDependencies(scanArchiveService: archiveService))
@@ -3133,7 +3133,7 @@ struct AppModelDependencyTests {
 
     @Test
     func testCancelArchiveOperationCancelsImportWork() async throws {
-        let archiveURL = URL(filePath: "/tmp/import-cancelled.radixscan", directoryHint: .isDirectory)
+        let archiveURL = URL(filePath: "/tmp/import-cancelled.vracscan", directoryHint: .isDirectory)
         let file = makeTestFileNode(id: "/import-cancelled/file.txt", name: "file.txt")
         let root = makeTestDirectoryNode(id: "/import-cancelled", name: "import-cancelled", children: [file])
         let store = FileTreeStore(root: root, childrenByID: [root.id: [file]])
@@ -3207,7 +3207,7 @@ struct AppModelDependencyTests {
 
     @Test
     func testStartingScanCancelsPendingImportBeforeItRestoresSnapshot() async throws {
-        let archiveURL = URL(filePath: "/tmp/import-race.radixscan", directoryHint: .isDirectory)
+        let archiveURL = URL(filePath: "/tmp/import-race.vracscan", directoryHint: .isDirectory)
         let importedFile = makeTestFileNode(id: "/import-race/file.txt", name: "file.txt")
         let importedRoot = makeTestDirectoryNode(id: "/import-race", name: "import-race", children: [importedFile])
         let importedStore = FileTreeStore(root: importedRoot, childrenByID: [importedRoot.id: [importedFile]])
@@ -3297,8 +3297,8 @@ struct AppModelDependencyTests {
 
     @Test
     func testCompareScanSnapshotsOpensSetupBeforeFileSelection() async throws {
-        let oldURL = URL(filePath: "/tmp/old.radixscan", directoryHint: .isDirectory)
-        let newURL = URL(filePath: "/tmp/new.radixscan", directoryHint: .isDirectory)
+        let oldURL = URL(filePath: "/tmp/old.vracscan", directoryHint: .isDirectory)
+        let newURL = URL(filePath: "/tmp/new.vracscan", directoryHint: .isDirectory)
         let oldSnapshot = makeComparisonSnapshot(
             rootPath: "/comparison-root",
             fileSize: 10,
@@ -3395,8 +3395,8 @@ struct AppModelDependencyTests {
 
     @Test
     func testComparisonImportConcurrencyRequiresArchivePairWithinMemoryBudget() throws {
-        let oldURL = URL(filePath: "/tmp/old-budget.radixscan", directoryHint: .isDirectory)
-        let newURL = URL(filePath: "/tmp/new-budget.radixscan", directoryHint: .isDirectory)
+        let oldURL = URL(filePath: "/tmp/old-budget.vracscan", directoryHint: .isDirectory)
+        let newURL = URL(filePath: "/tmp/new-budget.vracscan", directoryHint: .isDirectory)
         let oldSnapshot = makeComparisonSnapshot(
             rootPath: "/comparison-budget",
             fileSize: 10,
@@ -3440,8 +3440,8 @@ struct AppModelDependencyTests {
 
     @Test
     func testSupersededComparisonPanelCannotApplyLateSelection() async throws {
-        let oldURL = URL(filePath: "/tmp/superseded.radixscan", directoryHint: .isDirectory)
-        let newURL = URL(filePath: "/tmp/current.radixscan", directoryHint: .isDirectory)
+        let oldURL = URL(filePath: "/tmp/superseded.vracscan", directoryHint: .isDirectory)
+        let newURL = URL(filePath: "/tmp/current.vracscan", directoryHint: .isDirectory)
         let oldSnapshot = makeComparisonSnapshot(
             rootPath: "/comparison-root",
             fileSize: 10,
@@ -3594,7 +3594,7 @@ struct AppModelDependencyTests {
 
     @Test
     func testCompareScansCanUseCurrentScanAsAfter() async throws {
-        let archiveURL = URL(filePath: "/tmp/current-compare.radixscan", directoryHint: .isDirectory)
+        let archiveURL = URL(filePath: "/tmp/current-compare.vracscan", directoryHint: .isDirectory)
         let archivedSnapshot = makeComparisonSnapshot(
             rootPath: "/current-root",
             fileSize: 10,
@@ -3659,7 +3659,7 @@ struct AppModelDependencyTests {
 
     @Test
     func testDroppedComparisonSnapshotLoadsIntoRequestedSlot() async throws {
-        let archiveURL = URL(filePath: "/tmp/dropped.radixscan", directoryHint: .isDirectory)
+        let archiveURL = URL(filePath: "/tmp/dropped.vracscan", directoryHint: .isDirectory)
         let snapshot = makeComparisonSnapshot(
             rootPath: "/dropped-root",
             fileSize: 10,
@@ -3686,7 +3686,7 @@ struct AppModelDependencyTests {
 
     @Test
     func testSwapDuringComparisonPreviewLoadLandsResultInSwappedSlot() async throws {
-        let archiveURL = URL(filePath: "/tmp/swap-loading.radixscan", directoryHint: .isDirectory)
+        let archiveURL = URL(filePath: "/tmp/swap-loading.vracscan", directoryHint: .isDirectory)
         let snapshot = makeComparisonSnapshot(
             rootPath: "/swap-root",
             fileSize: 10,
@@ -3735,15 +3735,15 @@ struct AppModelDependencyTests {
         model.compareScanSnapshots()
         model.dropComparisonSnapshot(URL(filePath: "/tmp/not-a-scan.zip"), for: .before)
 
-        #expect(model.pendingComparisonSetup?.errorMessage == "Drop a .radixscan saved scan.")
+        #expect(model.pendingComparisonSetup?.errorMessage == "Drop a .vracscan saved scan.")
         let previewedURLs = await archiveService.previewedURLsSnapshot()
         #expect(previewedURLs.isEmpty)
     }
 
     @Test
     func testComparisonSetupRejectsReverseChronologicalOrder() async throws {
-        let oldURL = URL(filePath: "/tmp/swap-old.radixscan", directoryHint: .isDirectory)
-        let newURL = URL(filePath: "/tmp/swap-new.radixscan", directoryHint: .isDirectory)
+        let oldURL = URL(filePath: "/tmp/swap-old.vracscan", directoryHint: .isDirectory)
+        let newURL = URL(filePath: "/tmp/swap-new.vracscan", directoryHint: .isDirectory)
         let oldSnapshot = makeComparisonSnapshot(
             rootPath: "/swap-root",
             fileSize: 10,
@@ -3803,7 +3803,7 @@ struct AppModelDependencyTests {
 
     @Test
     func testImportedSnapshotCannotBeComparedAsCurrentScan() {
-        let archiveURL = URL(filePath: "/tmp/imported-current.radixscan", directoryHint: .isDirectory)
+        let archiveURL = URL(filePath: "/tmp/imported-current.vracscan", directoryHint: .isDirectory)
         let importedSnapshot = makeComparisonSnapshot(
             rootPath: "/imported-current",
             fileSize: 10,
@@ -4048,7 +4048,7 @@ private func installSelection(
         startedAt: Date(), finishedAt: Date(), scanWarnings: [], isComplete: true,
         source: isImported
             ? .imported(.init(
-                sourceURL: URL(filePath: "/selection.radixscan"), pathMode: .absolute,
+                sourceURL: URL(filePath: "/selection.vracscan"), pathMode: .absolute,
                 liveActionCapability: .pathValidation))
             : .live
     )

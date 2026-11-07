@@ -209,9 +209,9 @@ nonisolated enum FileSystemEventHistoryError: LocalizedError, Sendable {
         case .invalidCheckpointRange:
             return String(localized: "The requested FSEvents checkpoint range is invalid.", comment: "Error shown when an incremental scan checkpoint range is invalid.")
         case .streamCreationFailed:
-            return String(localized: "Radix could not create an FSEvents history stream.", comment: "Error shown when an FSEvents history stream cannot be created.")
+            return String(localized: "Vrac could not create an FSEvents history stream.", comment: "Error shown when an FSEvents history stream cannot be created.")
         case .streamStartFailed:
-            return String(localized: "Radix could not start the FSEvents history stream.", comment: "Error shown when an FSEvents history stream cannot be started.")
+            return String(localized: "Vrac could not start the FSEvents history stream.", comment: "Error shown when an FSEvents history stream cannot be started.")
         }
     }
 }

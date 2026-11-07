@@ -844,14 +844,14 @@ private extension ContentView {
     var pendingTrashMessage: String {
         let nodes = appModel.pendingTrashSelection?.nodes ?? []
         guard nodes.count != 1 else {
-            return String(localized: "Radix will ask macOS to move \(nodes[0].url.path) to the Trash.", comment: "Confirmation message for moving one selected item to the Trash.")
+            return String(localized: "Vrac will ask macOS to move \(nodes[0].url.path) to the Trash.", comment: "Confirmation message for moving one selected item to the Trash.")
         }
         let shownPaths = nodes.prefix(3).map(\.url.path).joined(separator: "\n")
         let remainingCount = nodes.count - 3
         let remainingText = remainingCount > 0
             ? "\n" + String(localized: "+\(remainingCount) more", comment: "Additional selected paths omitted from the Trash confirmation list.")
             : ""
-        return String(localized: "Radix will ask macOS to move \(nodes.count) selected items to the Trash:\n\(shownPaths)\(remainingText)", comment: "Confirmation message listing multiple selected items that will be moved to the Trash.")
+        return String(localized: "Vrac will ask macOS to move \(nodes.count) selected items to the Trash:\n\(shownPaths)\(remainingText)", comment: "Confirmation message listing multiple selected items that will be moved to the Trash.")
     }
 
     var cloudFileConfirmationTitle: String {

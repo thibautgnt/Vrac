@@ -73,7 +73,7 @@ enum SystemIntegration {
             case .copyPathFailed(let path):
                 return String(localized: "macOS could not copy the path for \(path).", comment: "Error shown when copying a selected file path fails.")
             case .protectedTrashLocation(let path):
-                return String(localized: "Radix will not move the protected location at \(path) to the Trash.", comment: "Safety error shown when a protected scan root is selected for deletion.")
+                return String(localized: "Vrac will not move the protected location at \(path) to the Trash.", comment: "Safety error shown when a protected scan root is selected for deletion.")
             }
         }
     }
@@ -157,7 +157,7 @@ enum SystemIntegration {
         panel.canChooseFiles = true
         panel.canCreateDirectories = false
         panel.prompt = String(localized: "Choose", comment: "Open panel action button for choosing a saved scan snapshot.")
-        panel.message = String(localized: "Choose a Radix scan snapshot.", comment: "Open panel instruction for selecting a saved scan snapshot.")
+        panel.message = String(localized: "Choose a Vrac scan snapshot.", comment: "Open panel instruction for selecting a saved scan snapshot.")
 
         let cancellationState = ExportPanelCancellationState()
         let presentation = ExportPanelPresentation(

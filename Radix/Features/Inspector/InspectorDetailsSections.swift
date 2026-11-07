@@ -90,7 +90,7 @@ struct InspectorSharedStorageSection: View {
         let logicalSize = RadixFormatters.size(node.logicalSize)
         if node.cloneIdentity != nil {
             return String(
-                localized: "\(logicalSize) logical size. Radix counts shared bytes once across clones, so deleting this file may free less than its apparent size.",
+                localized: "\(logicalSize) logical size. Vrac counts shared bytes once across clones, so deleting this file may free less than its apparent size.",
                 comment: "Inspector explanation for an APFS clone's logical size and attributed allocated storage."
             )
         }
@@ -111,7 +111,7 @@ struct InspectorMultiSharedStorageSection: View {
                     .font(.subheadline.weight(.semibold))
                     .foregroundStyle(Color.accentColor)
 
-                Text("Some selected files may share APFS storage. Allocated totals reflect Radix’s storage attribution and may differ from the space reclaimed by deletion.")
+                Text("Some selected files may share APFS storage. Allocated totals reflect Vrac’s storage attribution and may differ from the space reclaimed by deletion.")
                     .font(.caption)
                     .foregroundStyle(.secondary)
                     .fixedSize(horizontal: false, vertical: true)
@@ -248,7 +248,7 @@ struct InspectorSummarizedSection: View {
                     .font(.subheadline.weight(.semibold))
                     .foregroundStyle(Color.accentColor)
 
-                Text("Radix grouped this folder during the scan. Expand it to inspect individual items.")
+                Text("Vrac grouped this folder during the scan. Expand it to inspect individual items.")
                     .font(.caption)
                     .foregroundStyle(.secondary)
                     .fixedSize(horizontal: false, vertical: true)

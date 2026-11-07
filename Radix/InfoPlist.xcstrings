@@ -8,43 +8,43 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Radix"
+            "value": "Vrac"
           }
         },
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Radix"
+            "value": "Vrac"
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Radix"
+            "value": "Vrac"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Radix"
+            "value": "Vrac"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Radix"
+            "value": "Vrac"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "Radix"
+            "value": "Vrac"
           }
         },
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "Radix"
+            "value": "Vrac"
           }
         }
       }
@@ -56,43 +56,43 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Radix"
+            "value": "Vrac"
           }
         },
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Radix"
+            "value": "Vrac"
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Radix"
+            "value": "Vrac"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Radix"
+            "value": "Vrac"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Radix"
+            "value": "Vrac"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "Radix"
+            "value": "Vrac"
           }
         },
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "Radix"
+            "value": "Vrac"
           }
         }
       }
@@ -145,96 +145,96 @@
         }
       }
     },
-    "Radix Discard Pile Drag Payload": {
+    "Vrac Discard Pile Drag Payload": {
       "comment": "Exported drag payload type description",
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Radix-Ziehdaten der Löschliste"
+            "value": "Vrac-Ziehdaten der Löschliste"
           }
         },
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Radix Discard Pile Drag Payload"
+            "value": "Vrac Discard Pile Drag Payload"
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Datos de arrastre de la pila de descarte de Radix"
+            "value": "Datos de arrastre de la pila de descarte de Vrac"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Données de glissement de la pile de suppression de Radix"
+            "value": "Données de glissement de la pile de suppression de Vrac"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Dati di trascinamento dell'elenco di eliminazione Radix"
+            "value": "Dati di trascinamento dell'elenco di eliminazione Vrac"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "Radix 待处理列表拖放数据"
+            "value": "Vrac 待处理列表拖放数据"
           }
         },
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "Данные перетаскивания списка на удаление Radix"
+            "value": "Данные перетаскивания списка на удаление Vrac"
           }
         }
       }
     },
-    "Radix Scan Snapshot": {
+    "Vrac Scan Snapshot": {
       "comment": "Exported scan snapshot type description",
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Radix-Scan-Snapshot"
+            "value": "Vrac-Scan-Snapshot"
           }
         },
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Radix Scan Snapshot"
+            "value": "Vrac Scan Snapshot"
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Instantánea de análisis de Radix"
+            "value": "Instantánea de análisis de Vrac"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Instantané d’analyse Radix"
+            "value": "Instantané d’analyse Vrac"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Istantanea di scansione Radix"
+            "value": "Istantanea di scansione Vrac"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "Radix 扫描快照"
+            "value": "Vrac 扫描快照"
           }
         },
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "Снимок сканирования Radix"
+            "value": "Снимок сканирования Vrac"
           }
         }
       }

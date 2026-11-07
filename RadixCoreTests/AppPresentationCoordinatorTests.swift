@@ -72,8 +72,8 @@ struct AppPresentationCoordinatorTests {
 
     @Test
     func testMultipleArchiveOpensResumeOneAtATimeAroundPreview() {
-        let firstURL = URL(filePath: "/tmp/first.radixscan")
-        let secondURL = URL(filePath: "/tmp/second.radixscan")
+        let firstURL = URL(filePath: "/tmp/first.vracscan")
+        let secondURL = URL(filePath: "/tmp/second.vracscan")
         let coordinator = AppPresentationCoordinator(
             initialDestination: .sheet(.onboarding)
         )
@@ -92,7 +92,7 @@ struct AppPresentationCoordinatorTests {
     @Test
     func testIdleArchiveImportStartsImmediatelyWithoutQueuingIt() {
         let coordinator = AppPresentationCoordinator()
-        let url = URL(filePath: "/tmp/immediate.radixscan")
+        let url = URL(filePath: "/tmp/immediate.vracscan")
 
         #expect(coordinator.requestArchiveImport(url) == .startNow)
         #expect(coordinator.activeDestination == nil)
@@ -104,7 +104,7 @@ struct AppPresentationCoordinatorTests {
     @Test
     func testResetClearsActiveAndQueuedPresentationsAndArchiveImports() {
         let coordinator = AppPresentationCoordinator(initialDestination: .sheet(.onboarding))
-        let queuedURL = URL(filePath: "/tmp/queued.radixscan")
+        let queuedURL = URL(filePath: "/tmp/queued.vracscan")
         coordinator.present(.dialog(.trashConfirmation))
         #expect(coordinator.requestArchiveImport(queuedURL) == .queued)
         coordinator.present(.sheet(.discardPileReview))
@@ -114,7 +114,7 @@ struct AppPresentationCoordinatorTests {
         #expect(coordinator.activeDestination == nil)
         #expect(coordinator.activeSheet == nil)
         #expect(coordinator.activeDialog == nil)
-        let freshURL = URL(filePath: "/tmp/fresh.radixscan")
+        let freshURL = URL(filePath: "/tmp/fresh.vracscan")
         #expect(coordinator.requestArchiveImport(freshURL) == .startNow)
         coordinator.present(.sheet(.onboarding))
         #expect(coordinator.cancel(kind: .onboarding) == nil)

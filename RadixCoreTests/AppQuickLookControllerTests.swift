@@ -239,5 +239,5 @@ private final class PreviewValidationGate {
 }
 
 private func importedSource(capability: ImportedSnapshotLiveActionCapability = .pathValidation) -> ScanSnapshotSource {
-    .imported(.init(sourceURL: URL(filePath: "/scan.radixscan"), pathMode: .absolute, liveActionCapability: capability))
+    .imported(.init(sourceURL: URL(filePath: "/scan.vracscan"), pathMode: .absolute, liveActionCapability: capability))
 }
